@@ -4,17 +4,203 @@
   <head>
     <meta charset="utf-8">
     <meta name="ASIM" content="Asociación de Importadores de Motorcicletas_ASIM">
-    <meta name="description" content="Asociación de Importadores de Motocicletas">
+    <meta name="description" content="Representantes de los importadores de motocicleta en Guatemala y generadora de diferentes actividades dedicadas al mundo del motorismo">
     <meta name="keywords" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asociación de Importadores de Motorcicletas_ASIM</title>
-	<!-- <link href="../CSS/Estilos.css" rel="stylesheet" type="text/css">
-	<link href="../CSS/Estilos_contenedor.css" rel="stylesheet" type="text/css">-->
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASIM / Asociación de Importadores de Motocicletas</title>
+    <link href="CSS/inicializador.css" rel="stylesheet" type="text/css">
+	  <link href="CSS/home.css" rel="stylesheet" type="text/css">
+    <link href="CSS/estructura-cuerpo-del-home.css" rel="stylesheet" type="text/css">
+    <link href="CSS/calendario-actividades.css" rel="stylesheet" type="text/css">
+    
+    <link rel="shortcut icon" href="Imagenes/favicon.png">
+
+   
   </head>
   <body>
-  	<header>
-  		<h1> Hola mundo </h1>
-  	</header>
-  </body>
- </html>
 
+    <!-- ---------------------------------------Cabecera ------------------------------------------>
+
+      <header class="cont_cabecera">
+  		  <!--<picture>
+          <source srcset="Imagenes/alta.jpg" media="(min-width:1024px)">
+          <source srcset="Imagenes/mediana.jpg" media="(min-width:500px)">
+          <img src="Imagenes/pequeña.jpg" alt="foto pequeña">
+        </picture> -->
+        <div id="contenedor">
+          <div id="i_cabecera">
+            <picture> 
+              <source srcset="Imagenes/motorista_aventura_grande.jpg" media="(min-width:1200px)">
+              <source srcset="Imagenes/motorista_aventura_mediana.jpg" media="(min-width:500px)">
+              <img src="Imagenes/motorista_aventura_pequeña.jpg" alt="motorista de aventura">
+            </picture>
+          </div>
+            <div class="menu">
+                <div class="menu_derecho">
+                  <div class="md_contenedor">
+                      <img src="Imagenes/menu_izquierdo.png" alt="menu_izquierdo"/>
+                        <nav>
+                         <div id="menu_izquierdo">
+                            <ul class="navegador">
+                              <li><a href="">Historia de la Asim</a></li>
+                              <li><a href="">Eventos y Calendarios</a></li>
+                              <li><a class="mdm_esquina_izq" href="">¿Quienes Somos?</a>
+                                <ul>
+                                  <li><a href="">¿Quienes Somos?</a></li>
+                                  <li><a href="">Socios</a></li>
+                                  <li><a class="m_inferior" href="">Como afiliarse</a></li>
+                                </ul>
+                              </li>      
+                            </ul>
+                          </div>
+                        </nav>
+                  </div>
+                </div>
+                <div class="menu_izquierdo">
+                  <div class="mi_contenedor">
+                    <img src="Imagenes/menu_derecho.png" alt="menu_derecho"/>
+                      <nav>
+                        <div id="menu_derecho">
+                          <ul class="navegador">
+                            <li><a class="mdm_esquina_der" href="">Servicios</a></li>
+                            <li><a href="">Preguntas Frecuentes</a></li>
+                            <li><a href="">Contáctanos</a></li>
+                          </ul>
+                        </div>
+                      </nav>
+                  </div>
+                </div>
+                <div class="logo">
+                  <img src="/Imagenes/logo.png" alt="logo"/>
+                </div>
+            </div>
+<!-------------------------------------botones de seguimiento ------------------------------------------------>
+        
+            <input type="checkbox" id="selector_derecho">
+            <label class="s_der" for="selector_derecho">
+            <img src="Imagenes/flecha_derecha.png" alt="flecha_derecha"/></label>
+  
+            <input type="checkbox" id="selector_izquierdo">
+            <label class="s_iz" for="selector_izquierdo">
+            <img src="Imagenes/flecha_izquierda.png" alt="flecha_izquierda"/></label>
+      
+        </div>
+      </header>
+
+      <!------------------------------Cuerpo del sitio web----------------------------------------------->
+
+      <!------------Primer bloque------------->
+
+       <section id="boxes"> 
+        <div class="box">
+          <img class="im_historia" src="Imagenes/logo-historia.png" alt="Historia_icono">
+          <h3> Historia </h3>
+          <p>
+            es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar.
+          </p>
+          <div class="boton">
+             <a href="https://www.google.com/"><p> Más información </p></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="Imagenes/logo-servicios.png" alt="Servicios_icono">
+          <h3> Servicios </h3>
+          <p>
+            es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar.
+          </p>
+          <div class="boton">
+             <a href="https://www.google.com/"><p> Más información </p></a>
+          </div>
+        </div>
+        <div class="box">
+          <img class="im_contact" src="Imagenes/logo-contactanos.png" alt="Contactanos_icono">
+          <h3> Contáctanos </h3>
+          <p>
+            es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar.
+          </p>
+          <div class="boton">
+             <a href="https://www.google.com/"><p> Más información </p></a>
+          </div>
+        </div>
+        <div class="clr"></div>
+      </section>
+      <!-- --------------------------------Bloque Quienes Somos----------------------------------------->
+        <!-- <section id="box-principal"> 
+            <div class="box-interior">
+              <img class="logo-qsomos" src="Imagenes/logo-motor.png" alt="logo-motor">
+              <img class="blc-blanco" src="Imagenes/b-blanco.png" alt="bloque-blanco">
+              <img class="moto-lat" src="Imagenes/motocicleta-lateral.png" alt="motocicleta">
+            </div>
+          </div>
+
+          <div class="clr"></div>
+        </section>-->
+
+        <!----------------------------------- Menú inferior ---------------------------------------->
+      <section id="boxes2"> 
+        <div class="clr"></div>
+        <div class="box"> 
+          <img class="im_preguntas" src="Imagenes/logo-llanta.png" alt="Preguntas-Frecuentes_icono">
+          <h3> Preguntas Frecuentes </h3> 
+          <p>
+            es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar.
+          </p>
+          <div class="boton">
+             <a href="https://www.google.com/"><p> Más información </p></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="Imagenes/logo-maleta.png" alt="Calendario-de-eventos_icono">
+          <h3> Calendario </h3>
+          <p>
+          es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar.
+          </p>
+          <div class="boton">
+             <a href="https://www.google.com/"><p> Más información </p></a>
+          </div>
+        </div> 
+        <div class="clr"></div>
+      </section>
+
+<!----------------------------------------------Línea y cabecera------------------------------------------>
+
+      <section id="titulo_calendar">
+          <div class="linea"></div> 
+          <img class="im-calendar" src="Imagenes/titulo-calendario.png" alt="Imagen de título de calendario">
+      </section>
+
+<!-------------------------------------------------Calendario de actividades ---------------------------------------------->
+
+      <section id="cal-actividades">
+        <div class="calendar">
+          <div class="calendar-info">
+            <div class="calendar-prev" id="prev-month">&#9664;</div>
+            <div class="calendar-month" id="month">Enero</div>
+            <div class="calendar-year" id="year">2018</div>
+            <div class="calendar-next" id="next-month">&#9654;</div>
+          </div>
+
+          <div class="calendar-week">
+            <div class="calendar-day calendar-item">Lunes</div>
+            <div class="calendar-day calendar-item">Martes</div>
+            <div class="calendar-day calendar-item">Miercoles</div>
+            <div class="calendar-day calendar-item">Jueves</div>
+            <div class="calendar-day calendar-item">Viernes</div>
+            <div class="calendar-day calendar-item">Sábado</div>
+            <div class="calendar-day calendar-item">Domingo</div>
+          </div>
+
+          <div class="calendar-dates" id="dates"></div>  
+        
+        <img src="Imagenes/banner-evento-marca.png" alt="banner de evento calendarizado por la marca">
+        </div>
+        
+      </section>
+      <!-- <footer> 
+        <p>Acces Web Design, Copyright &copy; 2018</p>
+      </footer>-->
+
+      <script type="text/javascript" src="js/scripts-dist.js"></script>
+
+  </body>
+</html>
