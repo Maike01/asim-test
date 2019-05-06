@@ -1,0 +1,38 @@
+/*----------------------------------------------------Cuerpo del contenido---------------------------------------------*/
+
+.historia-contenedor {
+
+	width: 100%;
+	/*margin: 50px auto; */
+}
+
+.historia-contenedor img{
+
+	width: 100%;
+}
+
+.recuadro-historia	.historia-contenedor{
+
+	display: grid;
+	grid-template-columns: 25.1% 1fr;
+}
+
+.recuadro-contenedor{
+
+	position:relative;
+}
+
+.historia-contenedor h1{
+
+	position: absolute;
+	left: 5%;
+	bottom: 15%;
+	font-family: arial;
+	font-size: 6vw;
+	color: #fff;
+}
+
+.recuadro-historia{
+
+	margin-top: 5px;
+}

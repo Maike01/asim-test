@@ -8,11 +8,11 @@
 
 .calendar{ /* Dimensiona el tamaño del calendario*/
 
-	/*background-color: skyblue;*/
 	width: 100%;
-	max-width: 600px;
-	margin: 1em auto;
-	padding: .2em 0;
+	max-width: 1200px;
+	height: auto;
+	/*margin: 1em auto;
+	padding: .2em 0;*/
 }
 
 .calendar-info{ /*modifica las dimensiones del título del mes*/
@@ -87,4 +87,14 @@
 	align-items: center;
 	margin: auto;
 	letter-spacing: 40px;
+}
+
+.calendar-date{
+
+	cursor: pointer;
+}
+
+.calendar-date:hover{
+
+	color: #ff0000;
 }

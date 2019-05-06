@@ -1,68 +1,59 @@
-/* Cabecera del CSS */
+ /* Cabecera del CSS */
 
 .cont_cabecera{
-	width: 100%;
-	height: 347px;
+    width: 100%;
+    height: 347px;
 }
 
 #i_cabecera img{
-	position: relative;
-	width: 100%;
-	height: 347px;
-	position: absolute; /*corregir para colocar pestañas de imágenes laterales*/
-	box-shadow: 0px 5px 39px -8px rgba(0, 0, 0, .50);
+    position: relative;
+    width: 100%;
+    height: 347px;
+    box-shadow: 0px 5px 39px -8px rgba(0, 0, 0, .50);
 }
 
 .menu_derecho{
-	position:absolute;
-	left: 0;
-	width: 45%;
-	top: 5%;
-	height: 34px;
-	box-shadow: 4px 10px 5px -8px rgba(0, 0, 0, .50);
+    position:absolute;
+    right: 0;
+    width: 45%;
+    top: 5%;
+    height: 34px;
+    box-shadow: 4px 10px 5px -8px rgba(0, 0, 0, .50);
+    
 
 }
 
 .menu_izquierdo{
-	position: absolute;
-	right: 0;
-	width: 45%;
-	top: 5%;
-	height: 34px;
-	box-shadow: 9px 10px 5px -8px rgba(0, 0, 0, .50);
-
+    position: absolute;
+    left: 0;
+    width: 45%;
+    top: 5%;
+    height: 34px;
+    box-shadow: 9px 10px 5px -8px rgba(0, 0, 0, .50);
 }
+
 .md_contenedor img{
-	width: 100%;
-	height: 34px;
-	position: relative;
+    width: 100%;
+    height: 34px;
+    position: relative;
 
 }
 
-#menu_izquierdo .navegador li a{
-
-	/*text-align: right;	*/
-
-}
 .mi_contenedor img{
-	width: 100%;
-	height: 34px;
-	position:relative;
-}
-
-.nav-iz{
-	
+    width: 100%;
+    height: 34px;
+    position:relative;
 }
 
 .logo{
-	position: absolute;
-	top: .5%;
-	right: 45%;
-	left: 45%;
+    position: absolute;
+    top: .5%;
+    right: 45%;
+    left: 45%;
 }
 
 .logo img{
-	width: 100%;
+    width: 100%;
 }
 
 
@@ -72,38 +63,38 @@
 en conjunto con el hover*/
 
 .navegador{
-	position: absolute;
-	width: 100%;
-	top: 0%;
-	padding: 0;
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    padding: 0;
 
 
 }
 
 .navegador li a{
 
-	padding-top: 10px;
-	display: block;
-	width: 154px;
-	height: 34px;
-	text-align: center;
+    padding-top: 10px;
+    display: block;
+    width: 154px;
+    height: 34px;
+    text-align: center;
 
 }
 
 
 .navegador li ul li a{
 
-	background-color: rgba(255, 255, 255, 0.5);
-	width: 100%;
-	text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    text-align: center;
 
 }
 .navegador li ul li a.m_inferior{
 
-	border-bottom: solid #286297 5px;
+    border-bottom: solid #286297 5px;
 }
 .navegador>li{
-	float: left;
+    float: left;
 }
 
 
@@ -111,7 +102,7 @@ en conjunto con el hover*/
 
 
 .navegador li a:hover{
-	 
+     
      background-image: url("../Imagenes/marcador_de_menu.png");
      height: 24px;
      background-size: cover;
@@ -154,3 +145,5 @@ en conjunto con el hover*/
 .navegador li:hover > ul{
      display: block;
   }
+
+  

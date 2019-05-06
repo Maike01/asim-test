@@ -12,6 +12,8 @@
 	  <link href="CSS/home.css" rel="stylesheet" type="text/css">
     <link href="CSS/estructura-cuerpo-del-home.css" rel="stylesheet" type="text/css">
     <link href="CSS/calendario-actividades.css" rel="stylesheet" type="text/css">
+    <link href="CSS/pie-de-pagina.css" rel="stylesheet" type="text/css">
+    <script src="js/all.js"></script>
     
     <link rel="shortcut icon" href="Imagenes/favicon.png">
 
@@ -42,9 +44,9 @@
                         <nav>
                          <div id="menu_izquierdo">
                             <ul class="navegador">
-                              <li><a href="">Historia de la Asim</a></li>
+                              <li><a href="html/historia.html">Historia de la Asim</a></li>
                               <li><a href="">Eventos y Calendarios</a></li>
-                              <li><a class="mdm_esquina_izq" href="">¿Quienes Somos?</a>
+                              <li><a href="html/quienes-somos.html">¿Quienes Somos?</a>
                                 <ul>
                                   <li><a href="">¿Quienes Somos?</a></li>
                                   <li><a href="">Socios</a></li>
@@ -71,7 +73,7 @@
                   </div>
                 </div>
                 <div class="logo">
-                  <img src="/Imagenes/logo.png" alt="logo"/>
+                  <a href="index.html"><img src="/Imagenes/logo.png" alt="logo"/></a>
                 </div>
             </div>
 <!-------------------------------------botones de seguimiento ------------------------------------------------>
@@ -99,7 +101,7 @@
             es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar.
           </p>
           <div class="boton">
-             <a href="https://www.google.com/"><p> Más información </p></a>
+             <a href="html/historia.html"><p> Más información </p></a>
           </div>
         </div>
         <div class="box">
@@ -122,19 +124,33 @@
              <a href="https://www.google.com/"><p> Más información </p></a>
           </div>
         </div>
-        <div class="clr"></div>
       </section>
-      <!-- --------------------------------Bloque Quienes Somos----------------------------------------->
-        <!-- <section id="box-principal"> 
-            <div class="box-interior">
+<!--------------------------------Elemente Clear externo para evitar exceso---------------------------->
+       <section>
+       <div class="clr"></div>
+      </section>
+<!-------- --------------------------------Bloque Quienes Somos----------------------------------------->
+         <section id="box-principal"> 
+            <div class="box-contenedor">
               <img class="logo-qsomos" src="Imagenes/logo-motor.png" alt="logo-motor">
-              <img class="blc-blanco" src="Imagenes/b-blanco.png" alt="bloque-blanco">
+              <div class="blc-blanco">            
+                <img src="Imagenes/b-blanco.png" alt="bloque-blanco">
+                <div class="contenido-q">
+                  <h3> ¿Quiénes Somos? </h3>
+                  <p>
+                    es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar.<br><br>
+
+                    es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar. Las imprentas y archivos de texto pueden cambiar paulatinamente.
+                  </p>
+                </div>
+                <div class="boton">
+                  <a href="html/quienes-somos.html"><p> Más información </p></a>
+                </div>
+              </div>
               <img class="moto-lat" src="Imagenes/motocicleta-lateral.png" alt="motocicleta">
             </div>
           </div>
-
-          <div class="clr"></div>
-        </section>-->
+        </section>
 
         <!----------------------------------- Menú inferior ---------------------------------------->
       <section id="boxes2"> 
@@ -159,7 +175,10 @@
              <a href="https://www.google.com/"><p> Más información </p></a>
           </div>
         </div> 
-        <div class="clr"></div>
+      </section>
+<!--------------------------------Elemente Clear externo para evitar exceso---------------------------->
+       <section>
+       <div class="clr"></div>
       </section>
 
 <!----------------------------------------------Línea y cabecera------------------------------------------>
@@ -172,35 +191,75 @@
 <!-------------------------------------------------Calendario de actividades ---------------------------------------------->
 
       <section id="cal-actividades">
-        <div class="calendar">
-          <div class="calendar-info">
-            <div class="calendar-prev" id="prev-month">&#9664;</div>
-            <div class="calendar-month" id="month">Enero</div>
-            <div class="calendar-year" id="year">2018</div>
-            <div class="calendar-next" id="next-month">&#9654;</div>
-          </div>
+        <div class="cal-contenedor">
+          <img class="brand-cal" src="Imagenes/banner-evento-marca.png" alt="banner de evento calendarizado por la marca">
+          <div class="calendar">
+            <div class="calendar-info">
+              <div class="calendar-prev" id="prev-month">&#9664;</div>
+              <div class="calendar-month" id="month">Enero</div>
+              <div class="calendar-year" id="year">2018</div>
+              <div class="calendar-next" id="next-month">&#9654;</div>
+            </div>
 
-          <div class="calendar-week">
-            <div class="calendar-day calendar-item">Lunes</div>
-            <div class="calendar-day calendar-item">Martes</div>
-            <div class="calendar-day calendar-item">Miercoles</div>
-            <div class="calendar-day calendar-item">Jueves</div>
-            <div class="calendar-day calendar-item">Viernes</div>
-            <div class="calendar-day calendar-item">Sábado</div>
-            <div class="calendar-day calendar-item">Domingo</div>
-          </div>
+            <div class="calendar-week">
+              <div class="calendar-day calendar-item">Lunes</div>
+              <div class="calendar-day calendar-item">Martes</div>
+              <div class="calendar-day calendar-item">Miercoles</div>
+              <div class="calendar-day calendar-item">Jueves</div>
+              <div class="calendar-day calendar-item">Viernes</div>
+              <div class="calendar-day calendar-item">Sábado</div>
+              <div class="calendar-day calendar-item">Domingo</div>
+            </div>
 
-          <div class="calendar-dates" id="dates"></div>  
-        
-        <img src="Imagenes/banner-evento-marca.png" alt="banner de evento calendarizado por la marca">
+            <div class="calendar-dates" id="dates" id="dates-cal"></div>  
+          </div>
+          <div class="fecha-cal">
+            <img src="Imagenes/cuadro-azul-cal.png" alt="cuadro azul de la fecha">
+            <div class="datos-fecha">
+              <p id="mes" class="dia-cal-m"></p>
+              <p id="año" class="dia-cal-a"></p>
+              <p id="estructura-cal" class="forma-fecha-cal"></p>
+            </div>
+            <p id="dia" class="dia-cal-d"></p>
+          </div>
+          <img class="evento-cal" src="Imagenes/cuadro-blanco-cal.png" alt="cuadro blanco con información del evento">          
         </div>
+
         
+        
+
       </section>
-      <!-- <footer> 
-        <p>Acces Web Design, Copyright &copy; 2018</p>
-      </footer>-->
+
+      
+<!-- --------------------------------------------Pie de página web-------------------------------------------->
+      
+      <footer>
+      <div class="contenedor-f">
+        <img src="Imagenes/letras-asim.png" alt="ASIM">
+          <nav class="menu-f">
+          <ul class="menu-contenedor">
+              <li><a href="html/historia.html">Historia ASIM</a></li>
+              <li><a href="">Eventos</a></li>
+              <li><a href="html/quienes-somos.html">¿Quienes Somos?</a></li>
+              <li><a href="">Servicios</a></li>
+              <li><a href="">Preguntas Frecuentes</a></li>
+              <li><a href="">Contactanos</a></li>
+          </ul>
+        </nav>
+        <div class=" social-f">
+          <i class="f-icono fab fa-facebook"></i>
+          <i class="t-icono fab fa-twitter"></i>
+        </div>
+        <div class="boton-f">
+          <a href="https://www.facebook.com/ASIMGuatemala/"><p> Contáctanos </p></a>
+        </div>
+        <p class="derechos-p">ASIM Copyright &copy; 2019</p>
+      </div>
+      </footer>
+
 
       <script type="text/javascript" src="js/scripts-dist.js"></script>
+      
 
   </body>
 </html>

@@ -21,6 +21,25 @@ nextMonthDOM.addEventListener('click', ()=>nextMonth());
 
 writeMonth(monthNumber);
 
+// pruebas//
+document.getElementById("dia").innerHTML = currentDay;
+document.getElementById("estructura-cal").innerHTML = "de " + month.textContent + " del " + year.textContent;
+
+function cambiar(){
+	document.getElementById("dia").innerHTML = dates.textContent;
+	document.getElementById("estructura-cal").innerHTML = "de " + month.textContent + " del " + year.textContent;
+
+}
+	document.getElementById("dates").onclick = function (){
+		cambiar();
+	}
+
+
+// pruebas//
+
+
+
+
 function writeMonth(month){
 
 	for(let i = startDay(); i>0;i--){
@@ -32,9 +51,9 @@ function writeMonth(month){
 		
 		if(i===currentDay){
 			dates.innerHTML += ` <div class="calendar-date calendar-item calendar-today">${i}</div>`;
-
 	}else{
-			dates.innerHTML += ` <div class="calendar-date calendar-item">${i}</div>`;	
+			dates.innerHTML += ` <div id="1" class="calendar-date calendar-item">${i}</div>`;
+
 		}
 	}
 
@@ -59,6 +78,7 @@ function getTotalDays(month){
 	}
 
 }
+
 
 function isleap(){
 
@@ -104,3 +124,4 @@ function setNewDate(){
 	dates.textContent = "";
 	writeMonth(monthNumber);
 }
+

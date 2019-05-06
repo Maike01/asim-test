@@ -1,0 +1,109 @@
+/*----------------------------------------------Pie de pagina -----------------------------------------------*/
+
+.contenedor-f{
+
+	margin-top: 50px;
+	background-color: #000;
+	width: 100%;
+	height: 150px;
+	position: relative;
+}
+
+.contenedor-f>img{
+
+	width: 15%;
+	min-width: 155px;
+	opacity: 0.1;
+	position: absolute;
+	top: 10%;
+	left:42%;
+	right: 45%;
+
+}
+
+.menu-contenedor{
+
+	width: 100%;
+	display: flex;
+	position: absolute;
+	top: 50%;
+	justify-content: center
+	
+
+}
+
+.menu-contenedor li a{
+
+	padding-right: 20px;
+	font-size: 14px;
+	color: #fff;	
+}
+
+.menu-contenedor li a:hover{
+
+	color: #003761;
+}
+
+.social-f{
+
+	color: #fff;
+	font-size: 25px;
+	position: absolute;
+	bottom: 10%;
+	left: 2%;
+	cursor: pointer;
+}
+
+.f-icono:hover{
+
+	color: #003761;
+}
+
+.t-icono:hover{
+
+	color: #003761;
+}
+/*-------------------------------Botón---------------------------------------*/
+
+.boton-f{
+
+	background-image: url("../Imagenes/boton.png");
+	width: 25%;
+	height: 29px;
+	min-width: 81.531px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	box-shadow: 1px 10px 5px -8px rgba(0, 0, 0, .50);
+	transition: background-image 1s;
+	position: absolute;
+	bottom: 10%;
+	left: 38%;
+	right: 38%;
+
+}
+
+.boton-f:hover{
+
+	background-image: url("../Imagenes/boton-hov.png");
+}
+
+.boton-f p{
+
+	font-family: arial;
+	text-align: center;
+	font-size: 0.8em;
+	font-weight: bold;
+	color: #fff;
+	line-height: 3em;
+}
+
+/*---------------------------------------------derechos-----------------------------------------------------*/
+
+.derechos-p{
+
+	color: #ffff;
+	position:absolute;
+	bottom: 10%;
+	right: 2%;
+}

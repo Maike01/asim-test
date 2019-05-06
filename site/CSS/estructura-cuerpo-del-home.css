@@ -5,6 +5,7 @@
 	background-image: url("../Imagenes/boton.png");
 	width: 40%;
 	height: 29px;
+	min-width: 81.531px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	cursor: pointer;
@@ -87,39 +88,63 @@
 }
 /*---------------------------------------Quienes Somos---------------------------------------------*/
 
-#box-principal{
+.box-contenedor {
 
-	margin-top: 50px;
-	background-color: red;
 	width: 100%;
-	height: 266px;
-	display:flex;
-	justify-content: center;
-	 flex-wrap:no
-  	padding: 0 4px;
-
-	
+	margin: 50px auto; 
 }
 
-/*.logo-qsomos, .blc-blanco, .moto-lat{
-	
-	max-width: 100%;
-	height:auto;
-}*/
+.box-contenedor img{
+
+	width: 100%;
+}
+
+.box-principal,	.box-contenedor{
+
+	display: grid;
+	grid-template-columns: 14% 63.5% 1fr;
+}
 
 .moto-lat{
 
 	box-shadow: -4px 0px 6px -1px rgba(0,0,0,0.45);
 }
 
+.blc-blanco{
 
+	margin-top: 5%;
+	position: relative;
+}
 
+.moto-lat{
 
+	margin-top: 14.4%;
+}
 
+.contenido-q{
 
-.clr2{
+	width: 70%;
+	position: absolute;
+	top: 15%;
+	left: 15%;
+	font-family: verdana;
+	font-size: 10px;
+	text-align: justify;
+}
 
-	clear: both;
+.contenido-q h3{
+
+	padding-bottom: 15px;
+	font-size: 3nw;
+	text-align: center;
+}
+
+.blc-blanco .boton{
+
+	position: absolute;
+	bottom:10%;
+	left: 30%;
+
 }
 /*---------------------------------------Caja de menú inferior ------------------------------------------*/
 
@@ -157,3 +182,93 @@
 	margin: 25px auto;
 	width: 25%;
 }
+
+/*---------------------------------------Elementos alternos / Calendario -----------------------------------*/
+
+.evento-cal{
+	height: 100%;
+}
+
+.brand-cal {
+	height: 100%;
+}
+.cal-contenedor{
+
+	width: 100%;
+	margin: auto;
+}
+
+.cal-contenedor img{
+
+	width: 100%;
+}
+
+.cal-actividades, .cal-contenedor{
+
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+}
+
+.cal-contenedor img:first-child{
+
+	grid-column-start: 2;
+	grid-column-end: 5;
+}
+
+.calendar{
+
+	padding-bottom: 5%;
+	grid-column-start: 5;
+	grid-column-end: 10;
+}
+
+/*.cal-contenedor img:nth-child(3) {*/
+.fecha-cal{
+	grid-column-start: 2;
+	grid-column-end: 6;
+	position:relative;
+	width: 100%;
+}
+
+.datos-fecha{
+
+	position: absolute;
+	bottom: 5%;
+	right: 3%;
+}
+
+.forma-fecha-cal{
+
+	color: #fff;
+	font-family: aku_kamu;
+	font-size: 18px;	
+
+}
+
+.dia-cal-d{
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 18em;
+	font-family: aku_kamu;
+}
+
+.cal-contenedor img:last-child {
+
+	grid-column-start: 6;
+	grid-column-end: 10;
+}
+
+.calendar-date{
+
+	cursor: pointer;
+}
+
+.calendar-date:hover{
+
+	color: ##003761;
+}
+
