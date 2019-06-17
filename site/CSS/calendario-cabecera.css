@@ -2,13 +2,13 @@
 
 .cont_cabecera{
 	width: 100%;
-	height: 347px;
+	height: 120px;
 }
 
 #i_cabecera img{
 	position: relative;
 	width: 100%;
-	height: 347px;
+	height: 120px;
 	position: absolute; /*corregir para colocar pestañas de imágenes laterales*/
 	box-shadow: 0px 5px 39px -8px rgba(0, 0, 0, .50);
 }
@@ -76,6 +76,7 @@ en conjunto con el hover*/
 	width: 100%;
 	top: 0%;
 	padding: 0;
+	z-index: 30;
 
 
 }
@@ -85,10 +86,10 @@ en conjunto con el hover*/
 	padding-top: 10px;
 	display: block;
 	width: 154px;
-	height: 24px;
+	height: 34px;
 	text-align: center;
 	font-size: 1.1vw
-
+	z-index: 31;
 }
 
 
@@ -98,6 +99,7 @@ en conjunto con el hover*/
 	width: 100%;
 	text-align: center;
 	font-size: 1.1vw;
+	z-index: 32;
 
 }
 .navegador li ul li a.m_inferior{
@@ -156,3 +158,28 @@ en conjunto con el hover*/
 .navegador li:hover > ul{
      display: block;
   }
+
+  /*--------------------------------sección de fecha de calendario ------------------------*/
+
+
+  .recuadro{
+
+  	width: 100%;
+  	height: 300px;
+  }
+
+.recuadro-calendario{
+	width: 100%;
+  	height: 300px;
+	position: relative;
+	
+}
+  .recuadro-calendario img{
+
+  	width: 30%;
+  	position: absolute;
+  	left: 35%;
+  	right: 35%;
+  	top: 20%;
+  }
+

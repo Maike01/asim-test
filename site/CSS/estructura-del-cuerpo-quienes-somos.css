@@ -36,3 +36,141 @@
 
 	margin-top: 5px;
 }
+
+/*-----------------------------------------------------Cuerpo del texto ----------------------------------------------*/
+
+#bloque-tq{
+
+	margin-top: 50px;
+	position: relative;
+}
+
+h3{
+
+	font-size: 2vw;
+	width: 70%;
+	font-family: arcena;
+	text-align: center;
+	margin:auto;
+}
+
+h5{
+
+	font-size: 1.5vw;
+	width: 70%;
+	text-align: center;
+	font-family: arcena;
+	margin: auto;
+	margin-bottom: 2%;
+}
+
+.linea1-tq, .linea2-tq{
+
+	width: 60%;
+	height: 1px;
+	margin: auto;
+	background-color:black;
+	margin-bottom: 10px;
+}
+.contenedor-tq p{
+	
+	width: 80%;
+	margin: 50px auto;
+	font-size: 12px;
+	font-family: verdana;
+}
+
+.contenedor-tq img{
+
+	position: absolute;
+	top: 25%;
+	right: 0;
+	bottom: 0;
+
+}
+
+/*--------------------------------------Recuadros de información inferiores ------------------------------------------*/
+
+.recuadro-inferior-q{
+
+	margin-top: 30%;
+
+}
+.contenedor-inferior{
+
+	display: grid;
+	grid-template-columns: 35% 1fr;
+	background-color: #386b9e;
+}
+
+.contenedor-inferior img{
+
+	width: 100%;
+
+}
+
+.tmision h2{
+
+	font-family: verdana;
+	font-size: 225%;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 5%;
+}
+
+.tmision, .tvision{
+	width: 80%;
+	margin: auto;
+}
+
+.tmision p{
+
+
+	font-family: verdana;
+	font-size: 100%;
+	color: #fff;
+}
+
+.contenedor-inferior-2{
+
+	display: grid;
+	grid-template-columns: 50% 1fr;
+	background-color: #9d9c9c;
+	grid-template-areas: "a b";
+}
+
+.contenedor-inferior-2 img{
+
+	grid-area: b;
+	justify-self: end;
+	width: 80%;
+	
+}
+
+.tvision h2{
+
+	font-family: verdana;
+	font-size: 225%;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 5%;
+}
+
+.tvision p{
+
+	font-family: verdana;
+	font-size: 100%;
+	color: #fff;
+
+}
+
+
+/*--------------------------Ajustes del pie de página -------------------------------------*/
+
+.contenedor-f{
+
+	margin-top: 0px;
+}
+
+/*------------------------------   -----Marcador de secipon---------------------------------------------*/
+

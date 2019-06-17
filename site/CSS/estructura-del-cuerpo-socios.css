@@ -1,0 +1,204 @@
+/*----------------------------------------------------Cuerpo del contenido---------------------------------------------*/
+
+.socios-contenedor {
+
+	width: 100%;
+	/*margin: 50px auto; */
+}
+
+.socios-contenedor img{
+
+	width: 100%;
+}
+
+.recuadro-socios .socios-contenedor{
+
+	display: grid;
+	grid-template-columns: 25.1% 1fr;
+}
+
+.recuadro-contenedor{
+
+	position:relative;
+}
+
+.socios-contenedor h1{
+
+	position: absolute;
+	left: 5%;
+	bottom: 15%;
+	font-family: arial;
+	font-size: 7vw;
+	color: #fff;
+}
+
+.recuadro-socios{
+
+	margin-top: 5px;
+}
+
+
+/*-----------------------------------Frase principal de Socios---------------------------------*/
+
+.frase{
+
+	margin-top: 3%;
+}
+.frase h3{
+
+	font-family: arcena;
+	font-size: 200%;
+	text-align: center;
+}
+
+.linea {
+
+	width: 40%;
+	height: 1px;
+	background-color: #000;
+	margin: 0.5% auto;
+}
+
+/*---------------------------Cuerpo de la página Socios imágenes ------------------------------------*/
+
+.contenedor-socios{
+
+	width: 80%;
+	margin: auto;
+}
+
+.cont-socios img{
+
+	width: 100%;
+}
+
+.contenedor-socios .cont-socios{
+
+	display: grid;
+	grid-template-columns: 1fr 0.25fr 1fr 0.25fr 1fr;
+}
+
+.contenedor-socios{
+
+	margin-top: 5%;
+}
+
+.avanti, .bajaj, .bmw-motorrad, .ducati, .freedom, .genesis, .haojue, .hero, .honda{
+
+	align-self: center;
+	justify-self: center;
+}
+
+.indian, .italika, .kawasaki, .ktm, .mahindra, .serpento, .suzuki, .vrc, .yamaha{
+	align-self: center;
+	justify-self: center;
+
+}
+
+/*---------------------------Cuerpo de la página Socios textos ------------------------------------*/
+
+.titulo-s{
+
+	font-family: verdana;
+	text-align: center;
+	margin-top: 5%;
+}
+
+.titulo-s h2{
+
+	font-weight: bold;
+	font-size: 100%;
+}
+
+.titulo-s h3{
+
+	font-size:100%;
+	color: #6a6a6a;
+	margin-bottom: 10%;
+}
+
+.titulo-s p{
+
+	font-size: 88%;
+}
+
+
+/*-----------------------separación de áreas de colocación de modulos-------------------------------*/
+
+.bajaj, .freedom, .hero, .italika, .mahindra, .vrc{
+
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+
+.bmw-motorrad, .genesis, .honda, .kawasaki, .serpento, .yamaha{
+
+	grid-column-start: 5;
+	grid-column-end: 6;
+}
+
+/*-----------------------separación de áreas de colocación de modulos texto   -----------------------*/
+
+
+.bajaj-t, .freedom-t, .hero-t, .italika-t, .mahindra-t, .vrc-t{
+
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+
+.bmw-motorrad-t, .genesis-t, .honda-t, .kawasaki-t, .serpento-t, .yamaha-t{
+
+	grid-column-start: 5;
+	grid-column-end: 6;
+}
+
+/*-----------------------separación de áreas de colocación de modulos boton   -----------------------*/
+
+
+.bajaj-b, .freedom-b, .hero-b, .italika-b, .mahindra-b, .vrc-b{
+
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+
+.bmw-motorrad-b, .genesis-b, .honda-b, .kawasaki-b, .serpento-b, .yamaha-b{
+
+	grid-column-start: 5;
+	grid-column-end: 6;
+}
+
+
+
+/*-------------------------------Botón---------------------------------------*/
+
+.boton{
+
+	background-image: url("../Imagenes/boton.png");
+	width: 60%;
+	height: 29px;
+	min-width: 81.531px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	box-shadow: 1px 10px 5px -8px rgba(0, 0, 0, .50);
+	margin: 10% auto 15%;
+
+
+	transition: background-image 1s;
+
+}
+
+.boton:hover{
+
+	background-image: url("../Imagenes/boton-hov.png");
+}
+
+.boton p{
+
+	font-family: arial;
+	text-align: center;
+	font-size: 0.8em;
+	font-weight: bold;
+	color: #fff;
+	line-height: 3em;
+}

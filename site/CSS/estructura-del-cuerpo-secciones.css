@@ -1,4 +1,5 @@
-/*----------------------------------------------------Cuerpo del contenido---------------------------------------------*/
+
+/*------------------------  -----------Cuerpo del contenido---------------------------------------------*/
 
 .historia-contenedor {
 
@@ -48,4 +49,16 @@
 
 	width: 70%;
 	margin: auto;
+}
+
+/*------------------------------   -----Marcador de secipon---------------------------------------------*/
+
+.marcador-h{
+
+	 background-image: url("../Imagenes/marcador_de_menu.png");
+	 height: 24px;
+     background-repeat: no-repeat;
+     color: #ffffff;
+     font-weight:bold;
+     z-index: 100;
 }

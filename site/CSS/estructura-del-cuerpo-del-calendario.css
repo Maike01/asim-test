@@ -1,0 +1,162 @@
+/*-------------------------------------Reel de imágenes ---------------------------------------*/
+
+.linead{
+
+  	width: 90%;
+  	height: 1px;
+  	background-color: #000;
+  	margin: auto;
+}
+
+.reel-img img{
+	width: 100%;
+
+}
+.reel-img-contenedro, .reel-img{
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	margin: 3% 0 3%;
+}
+
+/*-----------------------------------Título del calendario--------------------------------*/
+
+.estructura-calendario{
+
+	width: 25%;
+	display: block;
+	margin: 3% auto;
+
+}
+
+/*-----------------------------------Cuerpo del calendario----------------------------------*/
+
+.contendor-cuerpo img{
+
+	width: 100%;
+}
+.contenedor, .contenedor-cuerpo{
+
+	display: grid;
+	grid-template-columns: 50% 1fr;
+	grid-template-rows: 30% 1fr;
+}
+
+/*---------------------------------------Elementos alternos / Calendario -----------------------------------*/
+
+.evento-cal{
+	height: 100%;
+}
+
+.brand-cal {
+	height: 100%;
+}
+.cal-contenedor{
+
+	width: 100%;
+	margin: auto;
+}
+
+.cal-contenedor img{
+
+	width: 100%;
+}
+
+/*.cal-contenedor img:nth-child(3) {*/
+.fecha-cal{
+	position:relative;
+	width: 100%;
+}
+
+.datos-fecha{
+
+	position: absolute;
+	bottom: 5%;
+	right: 3%;
+}
+
+.forma-fecha-cal{
+
+	color: #fff;
+	font-family: aku_kamu;
+	font-size: 12px;	
+
+}
+
+.dia-cal-d{
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 12em;
+	font-family: aku_kamu;
+}
+
+.cal-contenedor img:last-child {
+
+	grid-column-start: 6;
+	grid-column-end: 10;
+}
+
+.calendar-date{
+
+	cursor: pointer;
+}
+
+.calendar-date:hover{
+
+	color: ##003761;
+}
+
+/*---------------------Base del cuerpo de calendario lado derecho---------------------------*/
+
+.fecha-cal img{
+
+	width: 100%;
+}
+
+.contenedor-mf{
+
+	display:grid;
+	grid-template-columns: 50% 1fr;
+	margin-top: 10%;
+}
+
+.recuadro-blanco{
+
+	width: 100%;
+	background-color: #fff;
+}
+
+/*-----------------------Base del cuerpo de calendario lado izquierdo---------------------*/
+.recuadro-contenidop{
+
+	width:100%;
+	background-color: #397390;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.recuadroc-azul img{
+
+	width: 100%;
+}
+
+.contenedor-f{
+
+	margin-top:10px;
+}
+
+/*------------------------------   -----Marcador de secipon---------------------------------------------*/
+
+.marcador-c{
+
+	 background-image: url("../Imagenes/marcador_de_menu.png");
+	 height: 24px;
+     background-repeat: no-repeat;
+     color: #ffffff;
+     font-weight:bold;
+     z-index: 100;
+}

@@ -1,0 +1,150 @@
+/*----------------------------------------------------Cuerpo del contenido---------------------------------------------*/
+
+.contacto-contenedor {
+
+	width: 100%;
+	/*margin: 50px auto; */
+}
+
+.contacto-contenedor img{
+
+	width: 100%;
+}
+
+.recuadro-contacto	.contacto-contenedor{
+
+	display: grid;
+	grid-template-columns: 25.1% 1fr;
+}
+
+.recuadro-contenedor{
+
+	position:relative;
+}
+
+.contacto-contenedor h1{
+
+	position: absolute;
+	left: 5%;
+	bottom: 15%;
+	font-family: arial;
+	font-size: 7vw;
+	color: #fff;
+}
+
+.recuadro-contacto{
+
+	margin-top: 5px;
+}
+
+.telt p{
+
+	text-align: center;
+	color: #fff;
+	font-family: verdana;
+	font-size: 200%;
+}
+.telt{
+
+	margin-top: 20%;
+}
+/*---------------------------------------Contenedor de mapa -----------------------------------------*/
+
+.contenedor-mapa iframe{
+
+	width: 100%;
+	height: 400px;
+}
+
+/*--------------------------------------- Cuerpo de página contactar --------------------------------*/
+
+.contenedorcont{
+
+	margin-top: 5%;
+}
+.contendorcont img{
+
+	width:100%;
+}
+.contenedor-cont .contenedorcont{
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.datost{
+
+	margin-top:15%;
+}
+.cuadro-gris{
+
+	width: 100%;
+	background-color: #a5a4a4;
+}
+
+.cuadro-gris p{
+
+	font-family: verdana;
+	font-size: 100%;
+	color: #fff;
+	text-align: center;
+}
+
+.cuadro-logo{
+
+	justify-self: center;
+	align-self: center;
+}
+
+.cuadro-logo img{
+
+	width: 100%;
+}
+.contenedorcont{
+
+	background-color: #fff;
+}
+
+.cuadro-azul{
+
+	width: 100%;
+	height: 100%;
+	background-color: #05346e;
+}
+
+.cuadro-moto img{
+
+	width: 100%;
+}
+
+/*-----------------------------------Presentación formulario --------------------------------*/
+
+.marco-f{
+
+	width: 80%;
+	margin: auto;
+	margin-top: 5%;
+
+}
+
+.marco-f h2{
+
+	font-family: verdana;
+	font-size: 150%;
+	font-weight: bold;
+}
+
+.linea2{
+
+	width:100%;
+	height: 1px;
+	background-color: #000;
+	margin-top: 2%;
+	margin-bottom: 4%;
+}
+/*----------------------- Corrección al pie de página en este pestaña ---------------------*/
+
+.contenedor-f{
+
+	margin-top: 0%;
+}

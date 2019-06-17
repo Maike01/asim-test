@@ -1,0 +1,177 @@
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="BMW Motorrad" content="Formulario de atención al cliente">
+    <meta name="description" content="Formulario de atención al cliente según las necesidad de los clientes">
+    <meta name="keywords" content="">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Motorrad Voc</title>
+
+    <link href="CSS/inicializador.css" rel="stylesheet" type="text/css">
+    <link href="CSS/estilo-form.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/799d006ac3.js"></script>
+
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    
+    <link rel="shortcut icon" href="../imagenes/favicon.png">
+
+   
+  </head>
+    <body>
+<!---------------------------------Cabecera---------------------------->
+
+      <header class="titulo-p">
+        <h1>Sugerencias y Comentarios</h1>
+      </header>
+ <!--------------------------Selectores dinámicos ---------------------> 
+ 
+
+        <form name="formularioVoc" action="#" onsumit="return validar()">
+          <div class="formulario-dinamic">
+            <div class="fdinamic-sel">
+              <h2>¿Qué desea realizar?</h2>
+                <select required id="select" class="titulo1" name="contenedor-accion">
+                  <option value="" disabled selected> Seleccione </option>
+                  <option value="div2">Felicitación</option>
+                  <option value="div3" >Queja</option>
+                  <option value="div4">Sugerencia o Comentario</option>
+                </select>
+            </div>
+
+            <div class="fdinamic-area">
+              <h2>Departamento de la empresa</h2>
+                <select required name="contenedor_opt" onchange="cambia()">
+                  <option value="" disabled selected> Seleccione </option>
+                  <option value="1">Venta Motocicletas Nuevas</option>
+                  <option value="2">Venta Motocicletas Semi-Nuevas</option>
+                  <option value="3">Taller</option>
+                  <option value="4">Boutique de Accesorios</option>
+                  <option value="5">Repuestos</option>
+                  <option value="6">Caja</option>
+                  <option value="7">Mercadeo</option>
+                  <option value="8">Actividades Afuera de la Empresa</option>
+                </select>
+            </div>
+
+            <div class="fdinamic-sub">
+              <h2>Área</h2>
+                <select required id="opt-otros" name="opt">
+                  <option value="" disabled selected> Seleccione </option>
+                </select>
+            </div>
+           </div> 
+
+<!--------------------------Formulario de Contacto ------------------------------> 
+
+        <div class="form-wrap">
+
+            <div class="form-contact" name="formulario-de-contacto" action="#">
+
+<!----------------------Título de sección inferior y línea ---------------------->
+
+              <h1> Datos de contacto </h1>
+              <div class="linea"></div>
+              
+<!-------------------------Contenedor del grid----------------------------------->              
+              <div class="box-contenedor">
+                <div class="user-info">
+                  <div class="Nom">
+                    <label for="names">Nombre *:</label>
+                    <input type="text" id="names" placeholder="Nombre">
+                    <p id="namet"> </p>
+                  </div>
+
+                  <div class="correo">
+                    <label for="email">Correo electrónico *:</label>
+                    <input type="text" id="email" placeholder="Correo electrónico">
+                    <p id="correot"> </p>
+                  </div>
+
+                  <div class="tel">
+                    <label for="phone">Teléfono *:</label>
+                    <input type="text" id="phone" placeholder="Teléfono">
+                    <p id="telt"> </p>
+                  </div> 
+                  <input class="boton" type="button" value="Enviar Mensaje" id="btnSend">
+                </div>
+
+                <div class="contenedor-der">
+                   <div id="queja" class="miform">
+   
+                      <div id="div3" class="calendario">
+                       
+                            <!--<option value="0">Calendario</option>-->
+                            <input type="date" id="calendar" placeholder="Ingresar fecha">
+                       
+                      </div>
+
+                      <div id="div3" class="hora">
+                        <select name="contenedor-hora">
+                          <option value="0">1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                          <option value="4">5</option>
+                          <option value="5">6</option>
+                          <option value="6">7</option>
+                          <option value="7">8</option>
+                          <option value="8">9</option>
+                          <option value="9">10</option>
+                          <option value="10">11</option>
+                          <option value="11">12</option>
+                        </select>
+                    </div>
+
+                    <div id="div3" class="minutos">
+                        <select name="contenedor-minutos">
+                          <option value="0">00</option>
+                          <option value="1">15</option>
+                          <option value="2">30</option>
+                          <option value="3">45</option>
+                        </select>
+                    </div>
+
+                    <div id="div3" class="jornada">
+                        <select name="contenedor-jornada">
+                          <option value="0">A.M.</option>
+                          <option value="1">P.M.</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                  <textarea id="mensaje" placeholder=" Comentario"></textarea>
+                  
+                  <div class="casilla">
+                    <input type="checkbox" id="casilla">
+                    <label for="casilla">Autorizo que Bavaria Motors utilice esta información para contactarme según nuestras <a href="../html/politicas.html" target="_blank">Políticas de Privacidad</a></label>
+                    <p id="casillat"> </p>
+                  </div>
+                
+                </div>  
+            </div>
+        </div>
+
+        </form>
+
+<!---------------------------Ventana de errores------------------------------
+
+<div class="modal-wrap">
+    <div class="mensaje-modal">
+        <h3>Errores Encontrados</h3>
+        <p>Escriba un Nombre</p>
+        <p>Ingrese un Correo electrónico</p>
+        <p>Ingrese un Número de Teléfono</p>
+        <span id="btnClose">Cerrar</span>
+    </div>
+</div>
+-->
+
+
+        <script type="text/javascript" src="js/formulario.js"></script>
+        <script type="text/javascript" src="js/display.js"></script>
+
+
+    </body>
+  </html>

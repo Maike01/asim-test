@@ -1,0 +1,450 @@
+/*-----------------------------Cabecera-----------------------------------*/
+
+.titulo-p h1{
+
+	font-family: bmwmotorradtypewebbo_all-italic;
+	font-size: 32px;
+	text-align: center;
+	color: #000;
+	margin-bottom: 3%;
+}
+
+/*------------------------Cuerpo del formulario dinámico-------------------*/
+.formulario-dinamic{
+
+	display: grid;
+	grid-template-columns: 33% 33% 1fr;
+	margin: auto;
+}
+
+.formulario-dinamic h2{
+
+	font-family: bmwmotorradtypewebbo_all-italic;
+	font-size: 16px;
+
+}
+.formulario-dinamic select{
+
+	background: #fff;
+	color: #000;
+	padding: 10px;
+	width: 80%;
+	height: 40px;
+	border: none;
+	font-family: bmwmotorradtypewebli_all;
+	font-size: 14px;
+	color: #000000b8;
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);
+	-webkit-appearance: button;
+	outline: none;
+	margin-top: 10px;
+}
+
+/*---------------------- tipo de manejo de placeholder en select -----------------------*/
+
+select:required:invalid {
+
+	color: #000000b8;
+}
+
+option[ value=""][disabled]{
+
+	display: none;
+}
+
+option{
+
+	color: #000000b8;
+	font-family:  bmwmotorradtypewebli_all;
+}
+
+
+/*.fdinamic-sel:before{
+	
+	content:'\f078';
+	font-family: "FontAwesome";
+	position:absolute;
+	top: 50px;
+	right: 0;
+	width: 50px;
+	height: 35px;
+	background: #007ce0;
+}
+
+.fdinamic-sel:hover:before{
+
+	background: #0472ca;
+}
+
+/*
+/*------------------------Cuerpo del formulario de contacto----------------*/
+
+.form-wrap{
+
+	margin-top: 20%;
+}
+.box-contenedor{
+	margin-top: 5%;
+	display: grid;
+	grid-template-columns: 50% 1fr;
+}
+
+.box-contenedor input{
+
+	border-style: solid;
+	border-color: #f1f0f0;
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
+.form-contact h1{
+	font-family: bmwmotorradtypewebbo_all-italic;
+	letter-spacing: -1px;
+	font-size: 150%;
+
+}
+
+.linea{
+	background-color: #000;
+	width: 100%;
+	height: 0.3%;
+	margin: 5px;
+}
+
+
+.form-contact label{
+
+	font-family: bmwmotorradtypewebli_all;
+	font-size: 14px;
+}
+
+input[placeholder]{
+
+	font-family: bmwmotorradtypewebli_all;
+}
+
+textarea[placeholder]{
+	font-family: bmwmotorradtypewebli_all;
+
+}
+
+.user-info input{
+
+	height: 25px;
+	margin-left: 10px;
+	padding-left: 10px;
+}
+
+.Nom{
+
+	margin-left: 58px;
+	margin-bottom: 2%;
+}
+
+.tel{
+
+	margin-top: 2%;
+	margin-left: 55px;
+	margin-bottom: 5%;
+}
+
+.casilla input{
+
+	cursor: pointer;
+}
+
+.Nom input{
+
+	width: 60%;
+}
+
+.correo input{
+
+	width: 54%;
+}
+
+
+.contenedor-der textarea{
+
+	width: 100%;
+	height: 12em;
+	min-width: 100%;
+	max-width: 100%;
+	max-height: 12em;
+	min-height: 12em;
+	padding-left: 10px;
+	border: none;
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);
+	margin-bottom: 20px;
+}
+
+.user-info input[type="button"]{
+
+	width: 150px;
+	background: #4091EC;
+	border: none;
+	border-radius: 25px;
+
+
+	color: #fff;
+	font-family:bmwmotorradtypewebbo_all-italic;
+	font-size: 12px;
+	font-weight: 200;
+	text-align: center;
+	cursor: pointer;
+	margin-bottom:15px;
+}
+
+/*-------------------------Mensajes de error -------------------------------*/
+
+#namet, #correot, #telt, #casillat{
+
+	font-family: bmwmotorradtypewebli_all;
+	font-size: 12px;
+	color:  #cb3234;
+	margin-top: 5px;
+}
+
+
+
+/*-----------------Cuerpo del formulario de contacto derecho----------------*/
+
+.miform{
+	display: grid;
+	grid-template-columns: 50% 17% 17% 1fr;
+	margin-bottom: 2%;
+}
+
+.miform select{
+
+	background: #fff;
+	color: #000;
+	padding: 10px;
+	border: none;
+	font-family: bmwmotorradtypewebli_all;
+	font-size: 14px;
+	color: #000000b8;
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);
+	-webkit-appearance: button;
+	outline: none;
+	margin-bottom: 2%;
+
+}
+
+.calendario input{
+
+	width: 90%;
+	height: 35px;
+}
+
+
+
+.hora select{
+	width: 90%;
+	height: 35px;
+}
+
+.minutos select{
+	width: 90%;
+	height: 35px;
+}
+
+.jornada select{
+	width: 90%;
+	height: 35px;
+}
+
+#queja div{
+
+	display:none;
+}
+/*---------------------------Ventana de validación--------------------------*/
+
+.modal-wrap{
+
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.7);
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 3;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mensaje-modal{
+
+	background: #fff;
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+	width: 400px;
+	padding: 30px 20px 15px;
+}
+
+.mensaje-modal h3{
+	text-align:center;
+	font-family: bmwmotorradtypewebbo_all-italic;
+	font-size: 20px;
+	font-weight: 400;
+
+}
+
+.mensaje-modal h3:after{
+
+	content: '';
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: #C5C5C5;
+	margin: 10px 0px 15px;
+}
+
+.mensaje-modal p{
+
+	font-family: bmwmotorradtypewebli_all;
+	font-size: 16px;
+	color: #606060;
+}
+
+
+.mensaje-modal p:before{
+
+	content: "/f00d";
+	font-family: FontAwesome;
+	display: inline-block;
+	color: #E25151;
+	margin-right: 8px;
+} 
+
+.mensaje-modal #btnClose{
+
+	display: inline-block;
+	padding: 3px 10px;
+	margin-top: 10px;
+
+	background: #E25151;
+	color: #fff;
+	border: 2px solid #B14141;
+
+	float: right;
+	cursor: pointer;
+}
+
+
+.titulo1 option[value="2"]{
+
+	color: red;
+}
+
+.casilla input {
+
+	width: 15px;
+	height: 15px;
+}
+
+.casilla label{
+
+	font-family: bmwmotorradtypewebli_all;
+	font-size: 11px;
+}
+
+.casilla label a{
+
+	color: #4091EC;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+/*-------------------------primer registro ------------------------------*/
+option:first{
+
+	color: red;
+}
+
+
+/*--------------------------------Media Query-----------------------------*/
+
+@media screen and (max-width: 720px){
+
+/*-------------------------formulario dinamic-----------------------------*/
+
+.formulario-dinamic{
+
+	display: block;
+	
+}
+
+.formulario-dinamic h2{
+
+	margin-top: 2%;
+}
+
+.formulario-dinamic select{
+
+	width: 100%;
+}
+
+/*------------------------formulario datos de contacto --------------------*/
+
+.form-wrap{
+
+	margin-top: 5%;
+}
+
+.box-contenedor{
+
+	display: block;
+}
+
+.user-info input{
+
+	width: 100%;
+}
+
+.user-info label{
+
+	display: none;
+}
+
+.Nom, .tel, .correo{
+
+	margin-left: 0px;
+
+}
+
+.Nom input{
+
+	margin: 0px;
+}
+
+.tel input{
+
+	margin: 0px;
+}
+
+.correo input{
+
+	margin: 0px;
+}
+
+.boton{
+
+	position: absolute;
+	bottom: -175px;
+	width: 100%;
+
+
+}
+
+.user-info input[type="button"]{
+
+	width: 90%;
+	height: 5%;
+	margin-left: 0px;
+
+
+}
+}
+

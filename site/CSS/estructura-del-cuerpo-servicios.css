@@ -1,0 +1,119 @@
+/*----------------------------------------------------Cuerpo del contenido---------------------------------------------*/
+
+.servicio-contenedor {
+
+	width: 100%;
+	/*margin: 50px auto; */
+}
+
+.servicio-contenedor img{
+
+	width: 100%;
+}
+
+.recuadro-servicio	.servicio-contenedor{
+
+	display: grid;
+	grid-template-columns: 25.1% 1fr;
+}
+
+.recuadro-contenedor{
+
+	position:relative;
+}
+
+.servicio-contenedor h1{
+
+	position: absolute;
+	left: 5%;
+	bottom: 15%;
+	font-family: arial;
+	font-size: 7vw;
+	color: #fff;
+}
+
+.recuadro-servicio{
+
+	margin-top: 5px;
+}
+
+/*------------------------Generalidades de estructura de grid servicios ------------------------*/
+
+.contenedor-servicios{
+
+	width: 80%;
+	margin: 5% auto;
+}
+
+.contenedor-servicios h3{
+
+	font-family: verdana;
+	font-size: 100%;
+	font-weight: bold;
+	margin-bottom: 5%;
+}
+
+.contenedor-servicios p{
+
+	font-family: verdana;
+	font-size: 75%;
+		z-index: 30;
+}
+
+.serviciosc{
+
+	margin-bottom: 5%;
+
+}
+
+.serviciosc img{
+	cursor: pointer;
+
+}
+
+.sat-i, .aduanas-i, .intendencia-i, .transito-i, .vehiculos-i, .sistema-i, .juridico-i, .municipalidad-i, .ministerio-i{
+
+	justify-self: center;
+	margin-bottom: 15%;
+}
+
+
+
+/*-----------------------------Estructura de grid de serivicios--------- ------------------------*/
+
+
+.contenedor-servicios .serviciosc{
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 0.1fr 1fr 1fr;
+}
+
+.aduanas-t, .transito-t, .sistema-t, .municipalidad-t{
+	grid-column-start: 5;
+	grid-column-end:6;
+
+}
+
+.aduanas-i, .transito-i, .sistema-i, .municipalidad-i{
+	grid-column-start: 4;
+	grid-column-end:5;
+}
+
+/*------------------------------- logo sombrea --------------------------------------------*/
+
+.im-sombra img{
+
+	width: 100%;
+}
+
+.im-sombra{
+	width: 100%;
+	height: 250px;
+	position: relative;
+}
+
+.contenedor-im{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}

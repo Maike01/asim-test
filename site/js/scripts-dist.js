@@ -25,14 +25,11 @@ writeMonth(monthNumber);
 document.getElementById("dia").innerHTML = currentDay;
 document.getElementById("estructura-cal").innerHTML = "de " + month.textContent + " del " + year.textContent;
 
-function cambiar(){
-	document.getElementById("dia").innerHTML = dates.textContent;
+function cambiar(diaSeleccionado){
+	document.getElementById("dia").innerHTML = diaSeleccionado;
 	document.getElementById("estructura-cal").innerHTML = "de " + month.textContent + " del " + year.textContent;
 
 }
-	document.getElementById("dates").onclick = function (){
-		cambiar();
-	}
 
 
 // pruebas//
@@ -48,11 +45,11 @@ function writeMonth(month){
 	}
 
 	for(let i=1; i<=getTotalDays(month); i++){
-		
+
 		if(i===currentDay){
 			dates.innerHTML += ` <div class="calendar-date calendar-item calendar-today">${i}</div>`;
 	}else{
-			dates.innerHTML += ` <div id="1" class="calendar-date calendar-item">${i}</div>`;
+			dates.innerHTML += ` <div id="1" class="calendar-date calendar-item" onclick="cambiar(${i});">${i}</div>`;
 
 		}
 	}
@@ -124,4 +121,3 @@ function setNewDate(){
 	dates.textContent = "";
 	writeMonth(monthNumber);
 }
-

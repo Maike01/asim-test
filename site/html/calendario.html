@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="ASIM" content="Asociación de Importadores de Motorcicletas_ASIM">
+    <meta name="description" content="Representantes de los importadores de motocicleta en Guatemala y generadora de diferentes actividades dedicadas al mundo del motorismo">
+    <meta name="keywords" content="">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASIM / Asociación de Importadores de Motocicletas</title>
+    <link href="../CSS/estructura-del-cuerpo-del-calendario.css" rel="stylesheet" type="text/css">
+    <link href="../CSS/inicializador.css" rel="stylesheet" type="text/css">
+    <link href="../CSS/calendario-cabecera.css" rel="stylesheet" type="text/css">
+    <link href="../CSS/calendario-actividades.css" rel="stylesheet" type="text/css">
+    <link href="../CSS/pie-de-pagina.css" rel="stylesheet" type="text/css">
+    
+    <script src="../js/all.js"></script>
+    
+    <link rel="shortcut icon" href="../Imagenes/favicon.png">
+
+   
+  </head>
+  <body>
+
+    <!-- ---------------------------------------Cabecera ------------------------------------------>
+
+      <header class="cont_cabecera">
+            <picture id="i_cabecera"> 
+              <source srcset="../Imagenes/calendario/asim-calendario-grande.jpg" media="(min-width:1200px)">
+              <source srcset="../Imagenes/calendario/asim-calendario-mediano.jpg" media="(min-width:500px)">
+              <img src="../Imagenes/calendario/asim-calendario-pequeña.jpg" alt="motorista de aventura">
+            </picture>
+            <div class="menu">
+                <div class="menu_derecho">
+                  <div class="md_contenedor">
+                      <img src="../Imagenes/menu_izquierdo.png" alt="menu_izquierdo"/>
+                        <nav>
+                         <div id="menu_derecho">
+                            <ul class="navegador">
+                              <li><a href="../html/historia.html">Historia de la Asim</a></li>
+                              <li><a class="marcador-c" href="../html/calendario.html">Eventos y Calendarios</a></li>
+                              <li><a class="mdm_esquina_izq" href="../html/quienes-somos.html">¿Quienes Somos?</a>
+                                <ul>
+                                  <li><a href="../html/quienes-somos.html">¿Quienes Somos?</a></li>
+                                  <li><a href="../html/socios.html">Socios</a></li>
+                                  <li><a class="m_inferior" href="../html/afiliarse.html">Como afiliarse</a></li>
+                                </ul>
+                              </li>      
+                            </ul>
+                          </div>
+                        </nav>
+                  </div>
+                </div>
+                <div class="menu_izquierdo">
+                  <div class="mi_contenedor">
+                    <img src="../Imagenes/menu_derecho.png" alt="menu_derecho"/>
+                      <nav>
+                        <div id="menu_izquierdo">
+                          <ul class="navegador">
+                            <li><a class="mdm_esquina_der" href="../html/servicios.html">Servicios</a></li>
+                            <li><a href="../html/preguntasfq.html">Preguntas Frecuentes</a></li>
+                            <li><a href="../html/contacto.html">Contáctanos</a></li>
+                          </ul>
+                        </div>
+                      </nav>
+                  </div>
+                </div>
+                <div class="logo">
+                  <a href="../index.html"><img src="../Imagenes/logo.png" alt="logo"/></a>
+                </div>
+            </div>
+  </header>
+<!-- -------------------------------Marco Inferior de cabecera----------------------------- -->
+
+
+
+    <section class="recuadro">
+        <div class="recuadro-calendario">
+          <img src="../Imagenes/calendario/fecha.png" alt="Fecha de calendario">
+        </div>
+    </section>
+
+<!------------------------------------ Reel de imágenes ---------------------------------->
+
+    <section class="reel-img-contenedor">    
+        <div class="linead"></div>
+        <div class="reel-img">
+          <img src="../Imagenes/calendario/marcas/flecha-derecha.png" alt="Flecha izquierda">
+          <img src="../Imagenes/calendario/marcas/bmw-motorrad.png" alt="logo BMW Motorrad">
+          <img src="../Imagenes/calendario/marcas/bajaj.png" alt="logo Bajaj">
+          <img src="../Imagenes/calendario/marcas/freedom.png" alt="Freedom">
+          <img src="../Imagenes/calendario/marcas/genesis.png" alt="logo Genesis">
+          <img src="../Imagenes/calendario/marcas/honda.png" alt="Honda">
+          <img src="../Imagenes/calendario/marcas/indian-motorcycle.png" alt="logo Indian Motorcycle">
+          <img class ="a" src="../Imagenes/calendario/marcas/flecha-izquierda.png" alt="Flecha derecha">
+        </div>
+         <div class="linead"></div>
+    </section>
+
+<!---------------------------Título del cuerpo del calendario-------------------------------->
+
+    <section>
+      <img class="estructura-calendario" src="../Imagenes/calendario/calendario-titulo.png" alt="Títulod del calendario">
+    
+<!--------------------------------Cuerpo del calendario---------------------------------------->
+      
+    <div class="contenedor">
+      <div class="contendor-cuerpo">
+
+
+        <div  id="cal-actividades">
+          <div class="cal-contenedor">
+
+<!------------------------------Calendario de actividades ------------------------------------>
+
+            <div class="calendar">
+              <div class="calendar-info">
+                <div class="calendar-prev" id="prev-month">&#9664;</div>
+                <div class="calendar-month" id="month">Enero</div>
+                <div class="calendar-year" id="year">2018</div>
+                <div class="calendar-next" id="next-month">&#9654;</div>
+              </div>
+
+              <div class="calendar-week">
+                <div class="calendar-day calendar-item">Lunes</div>
+                <div class="calendar-day calendar-item">Martes</div>
+                <div class="calendar-day calendar-item">Miercoles</div>
+                <div class="calendar-day calendar-item">Jueves</div>
+                <div class="calendar-day calendar-item">Viernes</div>
+                <div class="calendar-day calendar-item">Sábado</div>
+                <div class="calendar-day calendar-item">Domingo</div>
+              </div>
+
+              <div class="calendar-dates" id="dates" id="dates-cal"></div>  
+            </div>
+          </div>
+        </div>
+<!----------------------------Sub contenedor bloque izquierdo--------------------------->
+
+        <div class="contenedor-mf">
+          <div class="fecha-cal">
+            <img src="../Imagenes/cuadro-azul-cal.png" alt="cuadro azul de la fecha">
+              <div class="datos-fecha">
+                <p id="mes" class="dia-cal-m"></p>
+                <p id="año" class="dia-cal-a"></p>
+                <p id="estructura-cal" class="forma-fecha-cal"></p>
+              </div>
+              <p id="dia" class="dia-cal-d"></p>
+          </div>
+          <div class="recuadro-blanco"></div>
+        </div>
+      </div>
+      <div class="recuadroc-azul">
+        <img src="../Imagenes/calendario/imagen-marca.png" alt="imagen de la marca">
+      </div>
+      <div class="recuadro-contenidop">
+      
+      </div>
+
+
+
+      </div>
+    </div>  
+    </section>
+
+
+
+  <!-- --------------------------------Pie de página web-------------------------------------------->
+      
+
+      <footer>
+      <div class="contenedor-f">
+        <img src="../Imagenes/letras-asim.png" alt="ASIM">
+          <nav class="menu-f">
+          <ul class="menu-contenedor">
+              <li><a href="../html/historia.html">Historia ASIM</a></li>
+              <li><a href="../html/calendario.html">Eventos</a></li>
+              <li><a href="../html/quienes-somos.html">¿Quienes Somos?</a></li>
+              <li><a href="../html/servicios.html">Servicios</a></li>
+              <li><a href="../html/preguntasfq.html">Preguntas Frecuentes</a></li>
+              <li><a href="../html/contacto.html">Contactanos</a></li>
+          </ul>
+        </nav>
+        <div class=" social-f">
+          <i class="f-icono fab fa-facebook"></i>
+          <i class="t-icono fab fa-twitter"></i>
+        </div>
+        <div class="boton-f">
+          <a href="../html/contacto.html"><p> Contáctanos </p></a>
+        </div>
+        <p class="derechos-p">ASIM Copyright &copy; 2019</p>
+      </div>
+      </footer>      
+
+      <script type="text/javascript" src="../js/scripts-dist.js"></script>
+
+  </body>
+</html>

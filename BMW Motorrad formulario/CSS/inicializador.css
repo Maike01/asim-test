@@ -1,0 +1,38 @@
+/*-----------------------Inicializador -------------------------*/
+* {
+
+	margin: 0px;
+	padding: 0px;
+}
+
+:focus{
+
+	outline: none;
+}
+
+body{
+
+	width: 90%;
+	margin: 2% auto;
+	background-color:#f1f0f0;
+}
+
+/*------------------------------Fuentes-----------------------------------*/
+
+@font-face{
+
+	src: url(../fonts/bmwmotorradtypewebbo_all.ttf);
+	font-family: bmwmotorradtypewebbo_all;
+}
+
+@font-face{
+
+	src: url(../fonts/bmwmotorradtypewebli_all.ttf);
+	font-family: bmwmotorradtypewebli_all;
+}
+
+@font-face{
+
+	src: url(../fonts/bmwmotorradtypewebbo_all-italic.ttf);
+	font-family: bmwmotorradtypewebbo_all-italic;
+}

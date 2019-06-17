@@ -8,14 +8,12 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASIM / Asociación de Importadores de Motocicletas</title>
     <link href="../CSS/inicializador.css" rel="stylesheet" type="text/css">
+    <link href="../CSS/home.css" rel="stylesheet" type="text/css">
+    <link href="../CSS/estructura-del-cuerpo-preguntasfq.css" rel="stylesheet" type="text/css">
     <link href="../CSS/pie-de-pagina.css" rel="stylesheet" type="text/css">
-    <link href="../CSS/menu.css" rel="stylesheet" type="text/css">
-    <link href="../CSS/estructura-del-cuerpo-secciones.css" rel="stylesheet" type="text/css">
-    <script src="../js/all.js"></script>
     
-    <link rel="shortcut icon" href="Imagenes/favicon.png">
+    <link rel="shortcut icon" href="../Imagenes/favicon.png">
 
-   
   </head>
   <body>
 
@@ -23,18 +21,18 @@
 
       <header class="cont_cabecera">
             <picture id="i_cabecera"> 
-              <source srcset="../Imagenes/historia/historia-asim-grande.jpg" media="(min-width:1200px)">
-              <source srcset="../Imagenes/historia/historia-asim-mediana.jpg" media="(min-width:500px)">
-              <img src="../Imagenes/historia/historia-asim-pequeña.jpg" alt="motorista de aventura">
+              <source srcset="../Imagenes/preguntasfq/asim-preguntasfq-grande.png" media="(min-width:1200px)">
+              <source srcset="../Imagenes/preguntasfq/asim-preguntasfq-mediano.png" media="(min-width:500px)">
+              <img src="../Imagenes/preguntasfq/asim-preguntasfq-pequeña.png" alt="sala de reuniones">
             </picture>
             <div class="menu">
-                <div class="menu_izquierdo">
+                <div class="menu_derecho">
                   <div class="md_contenedor">
                       <img src="../Imagenes/menu_izquierdo.png" alt="menu_izquierdo"/>
                         <nav>
-                         <div id="menu_izquierdo">
+                         <div id="menu_derecho">
                             <ul class="navegador">
-                              <li><a class="marcador-h" href="../html/historia.html">Historia de la Asim</a></li>
+                              <li><a href="../html/historia.html">Historia de la Asim</a></li>
                               <li><a href="../html/calendario.html">Eventos y Calendarios</a></li>
                               <li><a class="mdm_esquina_izq" href="../html/quienes-somos.html">¿Quienes Somos?</a>
                                 <ul>
@@ -48,11 +46,11 @@
                         </nav>
                   </div>
                 </div>
-                <div class="menu_derecho">
+                <div class="menu_izquierdo">
                   <div class="mi_contenedor">
                     <img src="../Imagenes/menu_derecho.png" alt="menu_derecho"/>
                       <nav>
-                        <div id="menu_derecho">
+                        <div id="menu_izquierdo">
                           <ul class="navegador">
                             <li><a class="mdm_esquina_der" href="../html/servicios.html">Servicios</a></li>
                             <li><a href="../html/preguntasfq.html">Preguntas Frecuentes</a></li>
@@ -66,36 +64,31 @@
                   <a href="../index.html"><img src="../Imagenes/logo.png" alt="logo"/></a>
                 </div>
             </div>
-  </header>
+     </header>
 <!-- ---------------------------------------------Marco Inferior de cabecera ------------------------------------------ -->
 
 
-<section class="recuadro-historia">
-    <div class="historia-contenedor">
-      <img src="../Imagenes/historia/motocicleta-historia.png" alt="Recuadro con motocicleta clásica">
-      <div class="recuadro-contenedor">
-        <img src="../Imagenes/historia/recuadro-azul.png" alt="Recuadro azul contenedor del título">
-        <h1>Historia</h1>
-      </div>
-    </div>
-</section>
+      <section class="recuadro-pregunta">
+        <div class="pregunta-contenedor">
+          <img src="../Imagenes/preguntasfq/logo-fq.png" alt="Recuadro con motocicleta clásica">
+          <div class="recuadro-contenedor">
+            <img src="../Imagenes/preguntasfq/recuadro-azul.png" alt="Recuadro azul contenedor del título">
+            <h1>Preguntas más frecuentes</h1>
+          </div>
+        </div>
+      </section>
+<!----------------------------- Cuerpo de la página Servicios ----------------------------------->
 
-<!-- ------------------------------------------------Cuerpo del sitio web ----------------------------------------------- -->
+        <section class="im-sombra">
+          <div class="contenedor-im">
+            <img src="../Imagenes/preguntasfq/logo-sombra-neumatico.png" alt="logo de neumático">
+          </div>
+        </section>
 
-<section class="moto-h">
-  <div class="moto-contenedor">
-    <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <br><br>
 
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-    </p>
-
-    <img src="../Imagenes/historia/sombra-motocicleta.png" alt="silueta de motocicieta clásica">
-  </div>  
-</section>
-
-<!-- --------------------------------------------Pie de página web-------------------------------------------->
+  <!-- --------------------------------Pie de página web-------------------------------------------->
       
+
       <footer>
       <div class="contenedor-f">
         <img src="../Imagenes/letras-asim.png" alt="ASIM">
@@ -119,5 +112,5 @@
         <p class="derechos-p">ASIM Copyright &copy; 2019</p>
       </div>
       </footer>      
-</body>
-</html>
+
+  </body>

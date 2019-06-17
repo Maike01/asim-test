@@ -1,0 +1,99 @@
+/*----------------------------------------------------Cuerpo del contenido---------------------------------------------*/
+
+.afiliarse-contenedor {
+
+	width: 100%;
+	/*margin: 50px auto; */
+}
+
+.afiliarse-contenedor img{
+
+	width: 100%;
+}
+
+.recuadro-afiliarse	.afiliarse-contenedor{
+
+	display: grid;
+	grid-template-columns: 25.1% 1fr;
+}
+
+.recuadro-contenedor{
+
+	position:relative;
+}
+
+.afiliarse-contenedor h1{
+
+	position: absolute;
+	left: 5%;
+	bottom: 15%;
+	font-family: arial;
+	font-size: 7vw;
+	color: #fff;
+}
+
+.recuadro-afiliarse{
+
+	margin-top: 5px;
+}
+
+/*-----------------------------------Frase principal de Socios---------------------------------*/
+
+.frase{
+
+	margin-top: 3%;
+}
+.frase h3{
+
+	font-family: arcena;
+	font-size: 200%;
+	text-align: center;
+}
+
+.linea {
+
+	width: 40%;
+	height: 1px;
+	background-color: #000;
+	margin: 0.5% auto;
+}
+
+/*--------------------------------------Cuerpo de texto----------------------------------------*/
+
+.afiliarse-cuerpo{
+
+	width: 80%;
+	margin:auto;
+	margin-top: 5%;
+	font-family: verdana;
+}
+
+.afiliarse-cuerpo h1{
+
+	font-weight: bold;
+	font-size: 200%;
+	margin-bottom: 3%;
+	text-align: center;
+}
+
+.afiliarse-cuerpo p{
+
+	text-align: justify;
+	margin-bottom: 5%;
+	font-size: 83%;
+}
+
+.afiliarse-cuerpo h2{
+	
+	font-size: 150%;
+}
+
+.linea2{
+
+	width: 50%;
+	height: 1px;
+	background-color: #000;
+	margin-top: 0.5%;
+	margin-bottom: 5%;
+}
+
