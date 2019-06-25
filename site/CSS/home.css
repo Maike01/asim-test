@@ -314,11 +314,7 @@
 
 }
 
-.menu-fijo{
 
-	position:fixed;
-
-}
 
 #menu_izquierdo .navegador{
 
@@ -427,9 +423,5 @@
 	background-color: transparent;
 	margin-left: 10%;
 }
-
-
-
-
 
 }
