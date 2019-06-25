@@ -1,82 +1,71 @@
 /* Cabecera del CSS */
 
-.cont_cabecera{
-	width: 100%;
-	height: 120px;
-}
+
 
 #i_cabecera img{
+
 	position: relative;
 	width: 100%;
 	height: 120px;
-	position: absolute; /*corregir para colocar pestañas de imágenes laterales*/
 	box-shadow: 0px 5px 39px -8px rgba(0, 0, 0, .50);
 }
 
-.menu_derecho{
-	position:absolute;
-	left: 0;
-	width: 45%;
-	top: 5%;
-	height: 34px;
-	box-shadow: 4px 10px 5px -8px rgba(0, 0, 0, .50);
+.menu{
 
-}
-
-.menu_izquierdo{
-	position: absolute;
-	right: 0;
-	width: 45%;
-	top: 5%;
-	height: 34px;
-	box-shadow: 9px 10px 5px -8px rgba(0, 0, 0, .50);
-
-}
-.md_contenedor img{
 	width: 100%;
-	height: 34px;
+	position: absolute;
+	top: 0;
+}
+
+.menu img{
+
+	width: 100%;
+}
+.menu .contenedor-menu{
+
+	display:grid;
+	grid-template-columns: 45% 1fr 45%;
+}
+
+.menu_derecho, .menu_izquierdo{
+
 	position: relative;
-
 }
 
-#menu_izquierdo .navegador li a{
+.menu_derecho img{
 
-	/*text-align: right;	*/
-
-}
-.mi_contenedor img{
-	width: 100%;
-	height: 34px;
-	position:relative;
-}
-
-.nav-iz{
-	
-}
-
-.logo{
+	margin-top: 5%;
+	box-shadow: 4px 10px 5px -8px rgba(0, 0, 0, .50);
 	position: absolute;
-	top: .5%;
-	right: 45%;
-	left: 45%;
 }
 
-.logo img{
-	width: 100%;
+.menu_izquierdo img{
+
+	margin-top: 5%;
+	box-shadow: 4px 10px 5px -8px rgba(0, 0, 0, .50);
+	position: absolute;
+}
+
+#menu_izquierdo .navegador{
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+#menu_derecho .navegador{
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 
-/*-------------------------------------Menú----------------------------------------------------------*/
+/*-------------------------------------Menú-------------------------------------*/
 
-/* Corregir el menú en su dimensión y hacer responsive el espacio que existen entre cada uno de los elementos
-en conjunto con el hover*/
 
 .navegador{
-	position: absolute;
+
 	width: 100%;
-	top: 0%;
 	padding: 0;
-	z-index: 30;
 
 
 }
@@ -85,13 +74,12 @@ en conjunto con el hover*/
 
 	padding-top: 10px;
 	display: block;
-	width: 154px;
-	height: 34px;
+	width: 100%;
+	height: 100%;
 	text-align: center;
 	font-size: 1.1vw
-	z-index: 31;
-}
 
+}
 
 .navegador li ul li a{
 
@@ -99,17 +87,17 @@ en conjunto con el hover*/
 	width: 100%;
 	text-align: center;
 	font-size: 1.1vw;
-	z-index: 32;
 
 }
 .navegador li ul li a.m_inferior{
 
 	border-bottom: solid #286297 5px;
 }
-.navegador>li{
-	float: left;
-}
 
+.navegador>li{
+
+	margin-top: 15%;
+}
 
  /*------------------------------------------Elementos Hover----------------------------------------------------------*/  
 
@@ -117,7 +105,7 @@ en conjunto con el hover*/
 .navegador li a:hover{
 	 
      background-image: url("../Imagenes/marcador_de_menu.png");
-     height: 24px;
+     height: 33px;
      background-size: cover;
      background-repeat: no-repeat;
      color: #ffffff;
@@ -144,22 +132,30 @@ en conjunto con el hover*/
      z-index:102;  
 
  }
-  /*------------------------------------------Submenu----------------------------------------------------------*/  
+  /*------------------------------------------Submenu-----------------------------------------*/
+
 .navegador li ul{
      display:none;
  }
+
+
  .navegador li {
-     /position: relative;
+     position: relative;
 
   }
  .navegador li ul li{
-     top: 0px;
+     top: 15px;
   }
 .navegador li:hover > ul{
      display: block;
   }
 
-  /*--------------------------------sección de fecha de calendario ------------------------*/
+.menu-bar{
+
+	display:none;
+}
+
+/*--------------------------------sección de fecha de calendario ------------------------*/
 
 
   .recuadro{
@@ -183,3 +179,193 @@ en conjunto con el hover*/
   	top: 20%;
   }
 
+
+/*-------------------------------------Media query menú----------------------------------*/
+
+ @media screen and (max-width: 720px){
+
+/*-----------------------------Menu------------------------*/
+
+/* ocultar elementos de menu de pc*/
+
+.menu_derecho img{
+
+	display: none;
+}
+
+.menu_izquierdo img{
+
+	display: none;
+}
+
+.logo img{
+
+	display: none;
+}
+
+.navegador li ul li a.m_inferior{
+
+	border-bottom: none;
+}
+
+.contenedor-menu a>img{
+
+	display: none;
+}
+ /*----------------------------------Elementos Hover--------------------------------*/  
+
+
+
+.navegador li a:hover{
+	 
+     background-image: none;
+
+ }
+#menu_derecho .navegador li a.mdm_esquina_der:hover{
+
+     background-image: none;
+
+ }
+#menu_izquierdo .navegador li a.mdm_esquina_izq:hover{
+     background-image: none;
+ }
+
+
+
+/* Menu vista mobile------------------------------------------------------------*/
+
+.menu-bar{
+
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 100%;
+
+}
+
+
+
+#menu_izquierdo .navegador{
+
+	display:block;
+}
+
+#menu_derecho .navegador{
+
+	display:block;
+}
+
+.menu-bar img{
+
+	width:100%;
+}
+
+.menu-bar .menu-barm{
+
+	display: grid;
+	grid-template-columns: 85% 1fr;
+	position: fixed;
+}
+
+.menu-logo img{
+
+	width: 80%;
+}
+
+.menu-barrab{
+
+	position: relative;
+	top: 28%;
+}
+
+.menu-barrab img{
+
+	box-shadow: 1px 10px 5px -8px rgba(0, 0, 0, .50);
+}
+
+.menu-t{
+
+	position: absolute;
+	left: 5%;
+	top: 10%;
+	font-family: Miryad Pro;
+	font-size: 5vw;
+
+}
+
+.menu {
+
+	width: 80%;
+	height: 100%;
+	background-color: #003761;
+	position: fixed;
+	z-index: 600;	
+	margin-top: 10%;
+	left: -100%;
+
+}
+
+.menu-logo img{
+
+	margin-top: 20%;
+}
+
+/*---------------------------Control del menu textual ------------------*/
+
+.menu .contenedor-menu{
+
+	display: block;
+}
+
+.navegador>li{
+
+	margin: 3%;
+}
+
+.navegador li a{
+
+	display: inline;
+	color: #fff;
+	padding-left: 2%;
+	font-family: Miryad Pro;
+	font-size: 3vw;
+}
+
+
+
+.navegador li ul li{
+
+	top: 10px;
+}
+
+.navegador li{
+
+	display: block;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	border-bottom: 1px solid rgba(255,255,255, .3);
+
+  }
+
+.navegador>li:hover{
+
+ 	background-color: #012846;
+
+ }
+
+ .navegador li ul li a{
+
+	display: block;
+	text-align: start;
+	background-color: transparent;
+	margin-left: 10%;
+	font-family: Miryad Pro;
+	font-size: 2.5vw;
+}
+
+
+
+}
+
+
+  

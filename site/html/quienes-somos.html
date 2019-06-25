@@ -14,20 +14,43 @@
     <script src="../js/all.js"></script>
     
     <link rel="shortcut icon" href="../Imagenes/favicon.png">
-
+    <script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
    
   </head>
   <body>
 
-    <!-- ---------------------------------------Cabecera ------------------------------------------>
+      <!-- ---------------------------------------Cabecera ------------------------------------------>
 
       <header class="cont_cabecera">
-            <picture id="i_cabecera"> 
-              <source srcset="../Imagenes/quienes-somos/asim-quienes-somos-grande.jpg" media="(min-width:1200px)">
+        <div id="contenedor">
+          <div id="i_cabecera">
+            <picture> 
+              <source srcset="../Imagenes/quienes-somos/asim-quienes-somos-grande.jpg" media="(min-width:1001px)">
               <source srcset="../Imagenes/quienes-somos/asim-quienes-somos-mediano.jpg" media="(min-width:500px)">
-              <img src="../Imagenes/quienes-somos/asim-quienes-somos-pequeña.jpg" alt="motorista de aventura">
+              <img src="../Imagenes/quienes-somos/asim-quienes-somos-pequeña.jpg" alt="sala de reuniones">
             </picture>
+          </div>
+
+<!------------------------------Barra de menu de mobile -------------------------------->           
+          <div class="menu-bar" id ="menu-fijo">
+            <div class="menu-barm">
+              <div class="menu-barrab">
+                <a class="menu-t bt-menu" href="#"><i class="fas fa-bars"></i></a>
+                <img src="../Imagenes/menu_mobile.png" alt="barra de menu vista mobile">
+              </div>
+              <div class="menu-logo">
+                <a href="../index.html"><img src="../Imagenes/logo.png" alt="logo"/></a>
+              </div>
+            </div>
+          </div>
+
+<!------------------------------------------------------------------------------------>          
+
+<!-----------------------------------Menu vista PC ----------------------------------->
+
+          </div>
             <div class="menu">
+              <div class="contenedor-menu">
                 <div class="menu_izquierdo">
                   <div class="md_contenedor">
                       <img src="../Imagenes/menu_izquierdo.png" alt="menu_izquierdo"/>
@@ -36,7 +59,7 @@
                             <ul class="navegador">
                               <li><a href="../html/historia.html">Historia de la Asim</a></li>
                               <li><a href="../html/calendario.html">Eventos y Calendarios</a></li>
-                              <li><a class="mdm_esquina_izq" href="../html/quienes-somos.html">¿Quienes Somos?</a>
+                              <li><a class="mdm_esquina_izq">¿Quienes Somos?</a>
                                 <ul>
                                   <li><a href="../html/quienes-somos.html">¿Quienes Somos?</a></li>
                                   <li><a href="../html/socios.html">Socios</a></li>
@@ -48,6 +71,7 @@
                         </nav>
                   </div>
                 </div>
+                <a href="../index.html"><img src="../Imagenes/logo.png" alt="logo"/></a>
                 <div class="menu_derecho">
                   <div class="mi_contenedor">
                     <img src="../Imagenes/menu_derecho.png" alt="menu_derecho"/>
@@ -62,11 +86,11 @@
                       </nav>
                   </div>
                 </div>
-                <div class="logo">
-                  <a href="../index.html"><img src="../Imagenes/logo.png" alt="logo"/></a>
-                </div>
+              
+              </div>
             </div>
-  </header>
+          </div>
+    </header>
 <!-- ---------------------------------------------Marco Inferior de cabecera ------------------------------------------ -->
 
 
@@ -125,6 +149,8 @@
               <li><a href="../html/historia.html">Historia ASIM</a></li>
               <li><a href="../html/calendario.html">Eventos</a></li>
               <li><a href="../html/quienes-somos.html">¿Quienes Somos?</a></li>
+              <li><a href="../html/socios.html">Socios</a></li>
+              <li><a class="m_inferior" href="../html/afiliarse.html">Como afiliarse</a></li>
               <li><a href="../html/servicios.html">Servicios</a></li>
               <li><a href="../html/preguntasfq.html">Preguntas Frecuentes</a></li>
               <li><a href="../html/contacto.html">Contactanos</a></li>
@@ -140,6 +166,8 @@
         <p class="derechos-p">ASIM Copyright &copy; 2019</p>
       </div>
       </footer>      
+
+      <script type="text/javascript" src="../js/menu.js"></script> 
 
   </body>
 </html>
