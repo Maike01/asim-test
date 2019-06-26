@@ -56,7 +56,7 @@
 
 }
 
-.box>p{
+.contenedor-mobile>p{
 
 	font-family: verdana;
 	width: 40%;
@@ -102,7 +102,7 @@
 .box-contenedor {
 
 	width: 100%;
-	margin: 50px auto; 
+	margin: 8% auto; 
 }
 
 .box-contenedor img{
@@ -181,7 +181,7 @@
 
 #titulo_calendar{
 
-	margin-top: 50px;
+	margin-top: 5%;
 }
 
 .linea{
@@ -288,3 +288,138 @@
 	color: ##003761;
 }
 
+.i-servicios-m img{
+
+	display:none;
+}
+/*-------------------------------------Media query menú----------------------------------*/
+
+ @media screen and (max-width: 720px){
+
+/*------------------------------Margen de las cajas-------------------------------------*/
+
+#boxes .contenedor-box{
+
+	display:grid;
+	grid-template-columns: 1fr;
+}
+
+#boxes2 .contenedor-box{
+
+	display:grid;
+	grid-template-columns: 1fr;
+}
+
+#boxes, #boxes2{
+
+	width:100%;
+	margin:0px;
+}
+
+.contenedor-box .box{
+
+	display: grid;
+	grid-template-columns: 40% 1fr;
+}
+
+.contenedor-box .box-servicios{
+
+	display: grid;
+	grid-template-columns: 1fr 40%;
+}
+.contenedor-box{
+
+	margin-top: 8%;
+}
+
+/*-------------------------------Imagenes---------------------------------*/
+
+.box img.im_historia{
+
+	width: 70%;
+	padding-bottom: 0;
+}
+
+.box img{
+
+	width: 40%;
+	margin: auto;
+
+}
+
+.box{
+
+	margin-top: 5%;
+	padding-bottom: 3%;
+	border-bottom: solid #fff 1px;
+}
+
+.box-servicios img{
+
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+}
+
+/*-----------------------------Texto---------------------------------------*/
+
+.box h3{
+
+	font-size: 2.5vw;
+	text-align: start;
+
+}
+
+.contenedor-mobile>p{
+
+	font-family: verdana;
+	width: 86%;
+	text-align: start;
+	margin: 0;
+	padding-top: 5%;
+	font-size: 2vw;
+}
+
+.espaciado-t{
+
+	padding-left: 10%;
+}
+
+.espaciado-t .boton{
+
+	margin: 10px 0;
+}
+
+/*----------------------------Línea divisoria -----------------*/
+
+.linea{
+
+	width: 90%;
+}
+
+/*----------------------------Calendario------------------------*/
+
+.im-calendar{
+
+	width: 50%;
+}
+
+.calendar{
+
+	padding-bottom: 5%;
+	grid-column-start: 2;
+	grid-column-end: 10;
+}
+
+.fecha-cal{
+	grid-column-start: 1;
+	grid-column-end: 6;
+}
+
+.cal-contenedor img:last-child {
+
+	grid-column-start: 6;
+	grid-column-end: 11;
+}
+
+}
