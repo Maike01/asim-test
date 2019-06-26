@@ -23,24 +23,26 @@
 
 .estructura-calendario{
 
-	width: 25%;
+	width: 40%;
 	display: block;
-	margin: 3% auto;
+	margin: 5% auto 10%;
 
 }
 
-/*-----------------------------------Cuerpo del calendario----------------------------------*/
+/*-----------------------------------Cuerpo del calendario---------------------------------*/
 
 .contendor-cuerpo img{
 
 	width: 100%;
 }
-.contenedor, .contenedor-cuerpo{
+
+.contendor-cuerpo{
 
 	display: grid;
-	grid-template-columns: 50% 1fr;
-	grid-template-rows: 30% 1fr;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
 }
+
 
 /*---------------------------------------Elementos alternos / Calendario -----------------------------------*/
 
@@ -57,12 +59,6 @@
 	margin: auto;
 }
 
-.cal-contenedor img{
-
-	width: 100%;
-}
-
-/*.cal-contenedor img:nth-child(3) {*/
 .fecha-cal{
 	position:relative;
 	width: 100%;
@@ -79,7 +75,7 @@
 
 	color: #fff;
 	font-family: aku_kamu;
-	font-size: 12px;	
+	font-size: 1.5vw;	
 
 }
 
@@ -90,14 +86,8 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: #fff;
-	font-size: 12em;
+	font-size: 16vw;
 	font-family: aku_kamu;
-}
-
-.cal-contenedor img:last-child {
-
-	grid-column-start: 6;
-	grid-column-end: 10;
 }
 
 .calendar-date{
@@ -110,18 +100,30 @@
 	color: ##003761;
 }
 
+
 /*---------------------Base del cuerpo de calendario lado derecho---------------------------*/
+
+.recuadro-datos-mobile{
+
+	display:none;
+}
 
 .fecha-cal img{
 
 	width: 100%;
 }
 
+
 .contenedor-mf{
 
 	display:grid;
-	grid-template-columns: 50% 1fr;
-	margin-top: 10%;
+	grid-template-columns: 1fr 1fr;
+
+}
+
+.contenedor-mf img{
+
+	width: 100%;
 }
 
 .recuadro-blanco{
@@ -134,20 +136,31 @@
 .recuadro-contenidop{
 
 	width:100%;
+	height: 100%;
 	background-color: #397390;
 	grid-column-start: 2;
 	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 3;
+
 }
 
+.recuadroc-azul{
+
+	grid-column-start: 2;
+}
 .recuadroc-azul img{
 
 	width: 100%;
+	height: 100%;
+
 }
 
 .contenedor-f{
 
 	margin-top:10px;
 }
+
 
 /*------------------------------   -----Marcador de secipon---------------------------------------------*/
 
@@ -160,3 +173,96 @@
      font-weight:bold;
      z-index: 100;
 }
+
+/*--------------------------Media query calendario-----------------------------*/
+
+ @media screen and (max-width: 720px){
+
+.contendor-cuerpo{
+
+	display: block
+}
+
+/*-----------------------------Datos recuadro ---------------------------------*/
+.datos-recuadro{
+
+	display: block;
+}
+.recuadro-datos-mobile{
+
+	width: 100%;
+	height: 50vw;
+	background-color: #397390;
+	margin-top: 3%;
+}
+
+.datos-recuadro{
+
+	width: 90%;
+	margin: auto;
+}
+
+.datos-recuadro h3{
+
+	color: #fff;
+	font-family: Verdana;
+	font-size: 3vw;
+	font-weight: bold;
+	padding-top: 10%;
+	padding-bottom: 5%;
+
+}
+
+.t-recuadro{
+
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.datos-eventos p{
+
+	color: #fff;
+	font-family: Verdana;
+	font-size: 2vw;
+	font-weight: bold;
+	margin-bottom: 4%;
+}
+
+.datos-info p{
+
+	color: #fff;
+	font-family: Verdana;
+	font-size: 2vw;;
+
+}
+
+.forma-fecha-cal{
+
+	font-size: 2vw;	
+
+}
+
+./*------------------------------estructura de maquetado inferior-----------------------------*/
+
+.contenedor-mf{
+
+	margin: 0;
+}
+
+.contenedor-imob{
+
+	display: grid;
+	grid-template-columns: 30% 1fr;
+	margin-top: 5%;
+
+}
+.contenedor-mf{
+
+	display:grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+
+
+ }

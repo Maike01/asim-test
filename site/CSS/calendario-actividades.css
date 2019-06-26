@@ -8,7 +8,7 @@
 
 .calendar{ /* Dimensiona el tamaño del calendario*/
 
-	width: 100%;
+	width: 97%;
 	max-width: 1200px;
 	height: auto;
 	/*margin: 1em auto;
@@ -46,7 +46,7 @@
 
 	display: grid;
 	grid-template-columns: repeat(7, 1fr);
-	grid-gap: 1vw;
+	grid-gap: 0.5vw;
 }
 
 .calendar-month, .calendar-year {
@@ -65,7 +65,7 @@
 	background: #003761;
 	color: white;
 	font-weight: bold;
-	width: 35%;
+	width: 50%;
 	border-radius: 50%;
 	margin: auto;
 }
@@ -98,3 +98,16 @@
 
 	color: #ff0000;
 }
+
+/*--------------------------Media query calendario-----------------------------*/
+
+ @media screen and (max-width: 720px){
+
+.calendar-dates{
+
+	grid-gap: 4vw;
+	margin-top: 5%;
+}
+
+
+ }
