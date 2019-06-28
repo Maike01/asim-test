@@ -35,25 +35,31 @@
 }
 
 .menu_derecho img{
-
-	margin-top: 5%;
+;
 	box-shadow: 4px 10px 5px -8px rgba(0, 0, 0, .50);
 	position: absolute;
 }
 
 .menu_izquierdo img{
 
-	margin-top: 5%;
 	box-shadow: 4px 10px 5px -8px rgba(0, 0, 0, .50);
 	position: absolute;
 }
 
+#menu_izquierdo img{
+
+	width: 100%;
+}
 #menu_izquierdo .navegador{
 
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 }
 
+#menu_derecho img{
+
+	width: 100%;
+}
 #menu_derecho .navegador{
 
 	display: grid;
@@ -68,6 +74,7 @@
 
 	width: 100%;
 	padding: 0;
+	margin-top: 5%;
 
 
 }
@@ -96,10 +103,7 @@
 	border-bottom: solid #286297 5px;
 }
 
-.navegador>li{
 
-	margin-top: 15%;
-}
 
  /*------------------------------------------Elementos Hover----------------------------------------------------------*/  
 
@@ -107,16 +111,16 @@
 .navegador li a:hover{
 	 
      background-image: url("../Imagenes/marcador_de_menu.png");
-     height: 33px;
      background-size: cover;
      background-repeat: no-repeat;
+     height: 2.14em;
      color: #ffffff;
      font-weight:bold;
      z-index: 100;
  }
 #menu_derecho .navegador li a.mdm_esquina_der:hover{
      background-image: url("../Imagenes/mdm_esquina_der.png");
-     height: 33px;
+     height: 2.14em;
      background-size: cover;
      background-repeat: no-repeat;
      color: #ffffff;
@@ -126,7 +130,7 @@
  }
 #menu_izquierdo .navegador li a.mdm_esquina_izq:hover{
      background-image: url("../Imagenes/mdm_esquina_izq.png");
-     height: 33px;
+     height: 2.14em;
      background-size: cover;
      background-repeat: no-repeat;
      color: #ffffff;

@@ -202,3 +202,22 @@
 	color: #fff;
 	line-height: 3em;
 }
+
+/*---------------------Media query socios----------------------------------*/
+
+ @media screen and (max-width: 720px){
+
+ .cont-socios img{
+
+ 	width: 60%;
+ 	display: block;
+ 	margin: auto;
+ }
+
+ .boton{
+
+ 	height: 19px;
+ }
+
+
+ }

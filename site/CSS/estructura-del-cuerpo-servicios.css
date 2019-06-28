@@ -81,7 +81,10 @@
 
 /*-----------------------------Estructura de grid de serivicios--------- ------------------------*/
 
+.contenedor-servicios img{
 
+	width: 100%;
+}
 .contenedor-servicios .serviciosc{
 
 	display: grid;
@@ -108,12 +111,33 @@
 
 .im-sombra{
 	width: 100%;
-	height: 250px;
 	position: relative;
 }
 
 .contenedor-im{
 	position: absolute;
-	right: 0;
+	right: 0%;
 	bottom: 0;
+}
+
+/*------------------------- Media query servicios -----------------------*/
+
+ @media screen and (max-width: 720px){
+
+.contenedor-servicios img{
+
+	width: 70%;
+}
+
+.contenedor-im{
+
+	display: block;
+	text-align: end;
+}
+
+.im-sombra img{
+
+	width: 50%;
+
+ }
 }

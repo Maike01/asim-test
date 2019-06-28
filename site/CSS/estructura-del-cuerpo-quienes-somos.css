@@ -129,6 +129,7 @@ h5{
 	font-family: verdana;
 	font-size: 100%;
 	color: #fff;
+	text-align: justify;
 }
 
 .contenedor-inferior-2{
@@ -161,6 +162,7 @@ h5{
 	font-family: verdana;
 	font-size: 100%;
 	color: #fff;
+	text-align: justify;
 
 }
 
@@ -172,5 +174,15 @@ h5{
 	margin-top: 0px;
 }
 
-/*------------------------------   -----Marcador de secipon---------------------------------------------*/
 
+
+/*----------------Media query quienes somos------------------------------*/
+
+ @media screen and (max-width: 720px){
+
+ h3, h5 {
+
+ 	font-size: 3vw;
+ }
+
+ }

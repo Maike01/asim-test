@@ -45,10 +45,17 @@
 	position: relative;
 }
 
+.moto-contenedor{
+
+	margin-top: 8%;
+}
 .moto-contenedor p{
 
 	width: 70%;
 	margin: auto;
+	font-family: Verdana;
+	font-size: 1.5vw;
+	text-align: justify;
 }
 
 

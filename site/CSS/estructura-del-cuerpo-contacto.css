@@ -46,7 +46,7 @@
 }
 .telt{
 
-	margin-top: 20%;
+	margin: 40% auto;
 }
 /*---------------------------------------Contenedor de mapa -----------------------------------------*/
 
@@ -62,7 +62,7 @@
 
 	margin-top: 5%;
 }
-.contendorcont img{
+.contenedorcont img{
 
 	width:100%;
 }
@@ -70,11 +70,12 @@
 
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
 }
 
 .datost{
 
-	margin-top:15%;
+	margin: 36% auto;
 }
 .cuadro-gris{
 
@@ -99,6 +100,8 @@
 .cuadro-logo img{
 
 	width: 100%;
+	display: block;
+	margin: auto;
 }
 .contenedorcont{
 
@@ -115,6 +118,7 @@
 .cuadro-moto img{
 
 	width: 100%;
+	height: 100%;
 }
 
 /*-----------------------------------Presentación formulario --------------------------------*/
@@ -148,3 +152,4 @@
 
 	margin-top: 0%;
 }
+
