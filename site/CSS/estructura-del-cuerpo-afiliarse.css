@@ -62,7 +62,7 @@
 
 .afiliarse-cuerpo{
 
-	width: 80%;
+	width: 70%;
 	margin:auto;
 	margin-top: 5%;
 	font-family: verdana;
@@ -71,7 +71,8 @@
 .afiliarse-cuerpo h1{
 
 	font-weight: bold;
-	font-size: 200%;
+	color: #257AA6;
+	font-size: 150%;
 	margin-bottom: 3%;
 	text-align: center;
 }
@@ -79,7 +80,7 @@
 .afiliarse-cuerpo p{
 
 	text-align: justify;
-	margin-bottom: 5%;
+	margin-bottom: 10%;
 	font-size: 83%;
 }
 
@@ -97,3 +98,21 @@
 	margin-bottom: 5%;
 }
 
+
+/*-------------------------------------Media Query Afiliarse ---------------------------*/
+
+ @media screen and (max-width: 720px){
+
+
+.afiliarse-cuerpo h1{
+
+	font-size: 200%;
+	margin-bottom: 8%;
+}
+
+.afiliarse-cuerpo p{
+
+	font-size: 150%;
+}
+
+ }

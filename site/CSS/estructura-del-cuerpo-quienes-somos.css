@@ -74,9 +74,9 @@ h5{
 }
 .contenedor-tq p{
 	
-	width: 80%;
+	width: 70%;
 	margin: 50px auto;
-	font-size: 12px;
+	font-size: 18px;
 	font-family: verdana;
 }
 
@@ -184,5 +184,13 @@ h5{
 
  	font-size: 3vw;
  }
+
+.contenedor-tq p{
+	
+	width: 80%;
+	margin: 50px auto;
+	font-size: 12px;
+	font-family: verdana;
+}
 
  }
