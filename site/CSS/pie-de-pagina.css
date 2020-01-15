@@ -52,6 +52,12 @@
 	cursor: pointer;
 }
 
+.social-f a{
+
+	color: #fff;
+	cursor: pointer;
+}
+
 .f-icono:hover{
 
 	color: #003761;
@@ -99,6 +105,7 @@
 	position:absolute;
 	bottom: 10%;
 	right: 2%;
+	font-size: 0.6em;
 }
 
 

@@ -74,9 +74,16 @@
 .sat-i, .aduanas-i, .intendencia-i, .transito-i, .vehiculos-i, .sistema-i, .juridico-i, .municipalidad-i, .ministerio-i{
 
 	justify-self: center;
-	margin-bottom: 15%;
+	margin: auto;
+	padding-bottom: 15%;
 }
 
+
+.sat-t, .aduanas-t, .intendencia-t, .transito-t, .vehiculos-t, .sistema-t, .juridico-t, .municipalidad-t, .ministerio-t{
+
+	margin: auto;
+	text-align: center;
+}
 
 
 /*-----------------------------Estructura de grid de serivicios--------- ------------------------*/

@@ -62,7 +62,7 @@
 	width: 40%;
 	text-align: justify;
 	margin: 5% auto;
-	font-size: 0.7vw;
+	font-size: 0.6vw;
 
 }
 
@@ -420,6 +420,12 @@
 
 	grid-column-start: 6;
 	grid-column-end: 11;
+}
+/*----------------Ajustes de la vista del calendario en el home para iphone ------------------------*/
+
+.brand-cal{
+
+	display:none;
 }
 
 }

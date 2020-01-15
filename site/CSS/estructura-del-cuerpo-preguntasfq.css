@@ -46,7 +46,7 @@
 
 .im-sombra{
 	width: 100%;
-	height: 650px;
+	height: 450px;
 	position: relative;
 }
 
@@ -54,4 +54,27 @@
 	position: absolute;
 	right: 0;
 	bottom: 0;
+}
+/*----------------------------------- Preguntas --------------------------------------------*/
+
+.FAQ-contenedor{
+	width: 80%;
+	margin: auto;
+	padding-top:5%;
+	font-family: verdana;
+	font-size: 1vw;
+}
+
+.FAQ-contenedor h3{
+
+	font-weight:bold;
+	padding-bottom: 2%;
+	font-size: 1.5vw;	
+}
+
+.FAQ-contenedor p{
+
+	width: 75%;
+	margin: left;
+	padding-bottom: 3%;
 }

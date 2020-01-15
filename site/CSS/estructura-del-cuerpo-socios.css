@@ -107,19 +107,19 @@
 .titulo-s h2{
 
 	font-weight: bold;
-	font-size: 100%;
+	font-size: 80%;
 }
 
 .titulo-s h3{
 
-	font-size:100%;
+	font-size:75%;
 	color: #6a6a6a;
 	margin-bottom: 10%;
 }
 
 .titulo-s p{
 
-	font-size: 88%;
+	font-size: 50%;
 }
 
 
@@ -175,7 +175,7 @@
 
 	background-image: url("../Imagenes/boton.png");
 	width: 60%;
-	height: 29px;
+	height: 3.5vw;
 	min-width: 81.531px;
 	background-size: cover;
 	background-repeat: no-repeat;
