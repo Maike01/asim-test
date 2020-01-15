@@ -427,5 +427,8 @@
 
 	display:none;
 }
+.evento-cal{
+	height: inherit;
+}
 
 }
